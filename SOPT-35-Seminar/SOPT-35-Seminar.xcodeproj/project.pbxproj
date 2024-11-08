@@ -11,6 +11,7 @@
 		02752BE42CDDE8FA00DF2E61 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02752BE32CDDE8FA00DF2E61 /* UserService.swift */; };
 		02752BE62CDDE95400DF2E61 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02752BE52CDDE95400DF2E61 /* Environment.swift */; };
 		02752BE82CDDE98600DF2E61 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02752BE72CDDE98600DF2E61 /* NetworkError.swift */; };
+		02752BEA2CDDECA700DF2E61 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02752BE92CDDECA700DF2E61 /* SignUpViewController.swift */; };
 		02B1A20E2CB1019200E91477 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B1A20D2CB1019200E91477 /* AppDelegate.swift */; };
 		02B1A2102CB1019200E91477 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B1A20F2CB1019200E91477 /* SceneDelegate.swift */; };
 		02B1A2122CB1019200E91477 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B1A2112CB1019200E91477 /* ViewController.swift */; };
@@ -72,6 +73,7 @@
 		02752BE32CDDE8FA00DF2E61 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 		02752BE52CDDE95400DF2E61 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
 		02752BE72CDDE98600DF2E61 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		02752BE92CDDECA700DF2E61 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		02B1A20A2CB1019200E91477 /* SOPT-35-Seminar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SOPT-35-Seminar.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		02B1A20D2CB1019200E91477 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		02B1A20F2CB1019200E91477 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -150,6 +152,7 @@
 				02752BE32CDDE8FA00DF2E61 /* UserService.swift */,
 				02752BE52CDDE95400DF2E61 /* Environment.swift */,
 				02752BE72CDDE98600DF2E61 /* NetworkError.swift */,
+				02752BE92CDDECA700DF2E61 /* SignUpViewController.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -516,6 +519,7 @@
 				02B1A2222CB1149500E91477 /* DetailViewController.swift in Sources */,
 				02B1A2322CBA59D400E91477 /* ColorViewController.swift in Sources */,
 				02B1A27A2CD3FBF100E91477 /* HeaderCell.swift in Sources */,
+				02752BEA2CDDECA700DF2E61 /* SignUpViewController.swift in Sources */,
 				02B1A24C2CCCB81100E91477 /* FreeChartCell.swift in Sources */,
 				02B1A2702CD3DE9400E91477 /* FinanceSection.swift in Sources */,
 				02B1A2282CB4286800E91477 /* UIView+.swift in Sources */,

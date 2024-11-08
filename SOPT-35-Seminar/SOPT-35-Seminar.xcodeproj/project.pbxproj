@@ -18,6 +18,8 @@
 		02752BF22CDE1BAA00DF2E61 /* HobbyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02752BF12CDE1BAA00DF2E61 /* HobbyViewController.swift */; };
 		02752BF42CDE1EF100DF2E61 /* UITextField+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02752BF32CDE1EF100DF2E61 /* UITextField+.swift */; };
 		02752BF62CDE29A900DF2E61 /* TokenManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02752BF52CDE29A900DF2E61 /* TokenManager.swift */; };
+		02752BF92CDE317200DF2E61 /* HobbyDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02752BF82CDE317200DF2E61 /* HobbyDTO.swift */; };
+		02752BFB2CDE377E00DF2E61 /* ChangeHobbyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02752BFA2CDE377E00DF2E61 /* ChangeHobbyViewController.swift */; };
 		02B1A20E2CB1019200E91477 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B1A20D2CB1019200E91477 /* AppDelegate.swift */; };
 		02B1A2102CB1019200E91477 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B1A20F2CB1019200E91477 /* SceneDelegate.swift */; };
 		02B1A2122CB1019200E91477 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B1A2112CB1019200E91477 /* ViewController.swift */; };
@@ -86,6 +88,8 @@
 		02752BF12CDE1BAA00DF2E61 /* HobbyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HobbyViewController.swift; sourceTree = "<group>"; };
 		02752BF32CDE1EF100DF2E61 /* UITextField+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+.swift"; sourceTree = "<group>"; };
 		02752BF52CDE29A900DF2E61 /* TokenManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenManager.swift; sourceTree = "<group>"; };
+		02752BF82CDE317200DF2E61 /* HobbyDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HobbyDTO.swift; sourceTree = "<group>"; };
+		02752BFA2CDE377E00DF2E61 /* ChangeHobbyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeHobbyViewController.swift; sourceTree = "<group>"; };
 		02B1A20A2CB1019200E91477 /* SOPT-35-Seminar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SOPT-35-Seminar.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		02B1A20D2CB1019200E91477 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		02B1A20F2CB1019200E91477 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -160,7 +164,7 @@
 		02752BDE2CDDE64F00DF2E61 /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				02752BE12CDDE67A00DF2E61 /* UserDTO.swift */,
+				02752BF72CDE311500DF2E61 /* DTO */,
 				02752BE32CDDE8FA00DF2E61 /* UserService.swift */,
 				02752BE52CDDE95400DF2E61 /* Environment.swift */,
 				02752BE72CDDE98600DF2E61 /* NetworkError.swift */,
@@ -168,8 +172,18 @@
 				02752BED2CDE108A00DF2E61 /* LoginViewController.swift */,
 				02752BF12CDE1BAA00DF2E61 /* HobbyViewController.swift */,
 				02752BF52CDE29A900DF2E61 /* TokenManager.swift */,
+				02752BFA2CDE377E00DF2E61 /* ChangeHobbyViewController.swift */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		02752BF72CDE311500DF2E61 /* DTO */ = {
+			isa = PBXGroup;
+			children = (
+				02752BE12CDDE67A00DF2E61 /* UserDTO.swift */,
+				02752BF82CDE317200DF2E61 /* HobbyDTO.swift */,
+			);
+			path = DTO;
 			sourceTree = "<group>";
 		};
 		02B1A2012CB1019200E91477 = {
@@ -520,6 +534,7 @@
 				02B1A2102CB1019200E91477 /* SceneDelegate.swift in Sources */,
 				02B1A2522CCCC77D00E91477 /* Photo.swift in Sources */,
 				02B1A2442CCBD01000E91477 /* TossEntryViewController.swift in Sources */,
+				02752BF92CDE317200DF2E61 /* HobbyDTO.swift in Sources */,
 				02B1A2482CCCB59B00E91477 /* App.swift in Sources */,
 				02752BE82CDDE98600DF2E61 /* NetworkError.swift in Sources */,
 				02B1A25C2CCE479B00E91477 /* UIStackView+.swift in Sources */,
@@ -538,6 +553,7 @@
 				02752BE62CDDE95400DF2E61 /* Environment.swift in Sources */,
 				02B1A2342CC409D800E91477 /* AppStoreViewController.swift in Sources */,
 				02B1A23E2CCBA27800E91477 /* WriteStarRatingView.swift in Sources */,
+				02752BFB2CDE377E00DF2E61 /* ChangeHobbyViewController.swift in Sources */,
 				02B1A28C2CD4ED7D00E91477 /* ReviewCell.swift in Sources */,
 				02B1A2222CB1149500E91477 /* DetailViewController.swift in Sources */,
 				02B1A2322CBA59D400E91477 /* ColorViewController.swift in Sources */,

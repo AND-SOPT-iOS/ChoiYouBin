@@ -109,6 +109,86 @@ class UserService {
             }
         }
     }
+    
+    func getMyHobby(
+        completion: @escaping (Result<HobbyResponse, NetworkError>) -> Void
+    ) {
+        guard let token = TokenManager.shared.getToken() else {
+            completion(.failure(.unknownError))
+            return
+        }
+        
+        let url = Environment.baseURL + "/user/my-hobby"
+        
+        let headers: HTTPHeaders = [
+            "Content-Type": "application/json",
+            "token": token
+        ]
+        
+        AF.request(
+            url,
+            method: .get,
+            headers: headers
+        )
+        .validate()
+        .responseDecodable(of: HobbyResponse.self) { [weak self] response in
+        
+            switch response.result {
+            case .success(let hobbyResponse):
+                completion(.success(hobbyResponse))
+            case .failure:
+                guard let statusCode = response.response?.statusCode,
+                      let data = response.data,
+                      let self
+                else {
+                    completion(.failure(.unknownError))
+                    return
+                }
+                let error = self.handleStatusCode(statusCode, data: data)
+                completion(.failure(error))
+            }
+        }
+    }
+    
+    func getOtherHobby(
+        userNo: Int,
+        completion: @escaping (Result<HobbyResponse, NetworkError>) -> Void
+    ) {
+        guard let token = TokenManager.shared.getToken() else {
+            completion(.failure(.unknownError))
+            return
+        }
+        
+        let url = Environment.baseURL + "/user/\(userNo)/hobby"
+        
+        let headers: HTTPHeaders = [
+            "Content-Type": "application/json",
+            "token": token
+        ]
+        
+        AF.request(
+            url,
+            method: .get,
+            headers: headers
+        )
+        .validate()
+        .responseDecodable(of: HobbyResponse.self) { [weak self] response in
+            guard let self = self else { return }
+            
+            switch response.result {
+            case .success(let hobbyResponse):
+                completion(.success(hobbyResponse))
+            case .failure:
+                guard let statusCode = response.response?.statusCode,
+                      let data = response.data else {
+                    completion(.failure(.unknownError))
+                    return
+                }
+                let error = self.handleStatusCode(statusCode, data: data)
+                completion(.failure(error))
+            }
+        }
+    }
     /// 서버의 명세서 기반으로 에러 처리를 진행해줌
     func handleStatusCode(
         _ statusCode: Int,

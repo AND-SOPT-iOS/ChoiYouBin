@@ -17,3 +17,12 @@ struct LoginRequest: Codable {
     let username: String
     let password: String
 }
+
+struct LoginResponse: Codable {
+    let result: TokenResult
+}
+
+struct TokenResult: Codable {
+    let token: String
+}
+

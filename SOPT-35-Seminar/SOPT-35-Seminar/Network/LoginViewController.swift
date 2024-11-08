@@ -125,7 +125,9 @@ class LoginViewController: UIViewController {
                 guard let self = self else { return }
                 
                 switch result {
-                case .success:
+                case .success(let loginResponse):
+                    let token = loginResponse.result.token
+                    TokenManager.shared.saveToken(token)
                     self.showToast(message: "로그인 성공!") {
                         let tabBarController = TabBarController()
                         (UIApplication.shared.connectedScenes.first?.delegate as? SceneDelegate)?.changeRootViewController(tabBarController)

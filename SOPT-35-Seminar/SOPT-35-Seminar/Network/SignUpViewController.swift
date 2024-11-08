@@ -145,14 +145,14 @@ class SignUpViewController: UIViewController {
         userService.register(
             username: userNameTextField.text!,
             password: passwordTextField.text!,
-            hobby: "농구"
+            hobby: hobbyTextField.text!
         ) { [weak self] result in
             DispatchQueue.main.async {
                 guard let self = self else { return }
                 
                 switch result {
                 case .success:
-                    self.showToast(message: "회원 등록 성공했어요.") {
+                    self.showToast(message: "회원 가입 성공!") {
                         self.navigationController?.popViewController(animated: true)
                     }
                 case let .failure(error):

@@ -75,7 +75,7 @@ class UserService {
     func login(
         username: String,
         password: String,
-        completion: @escaping (Result<Bool, NetworkError>) -> Void
+        completion: @escaping (Result<LoginResponse, NetworkError>) -> Void
     ) {
         let url = Environment.baseURL + "/login"
         
@@ -91,20 +91,19 @@ class UserService {
             encoder: JSONParameterEncoder.default
         )
         .validate()
-        .response { [weak self] response in
-            
-            guard let statusCode = response.response?.statusCode,
-                  let data = response.data,
-                  let self
-            else {
-                completion(.failure(.unknownError))
-                return
-            }
+        .responseDecodable(of: LoginResponse.self) { [weak self] response in
             
             switch response.result {
-            case .success:
-                completion(.success(true))
+            case .success(let loginResponse):
+                completion(.success(loginResponse))
             case .failure:
+                guard let statusCode = response.response?.statusCode,
+                      let data = response.data,
+                      let self
+                else {
+                    completion(.failure(.unknownError))
+                    return
+                }
                 let error = self.handleStatusCode(statusCode, data: data)
                 completion(.failure(error))
             }

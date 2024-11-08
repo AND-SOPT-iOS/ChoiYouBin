@@ -65,6 +65,7 @@ class SignUpViewController: UIViewController {
             $0.layer.borderWidth = 1.0
             $0.layer.borderColor = UIColor.gray.cgColor
             $0.layer.cornerRadius = 5.0
+            $0.isSecureTextEntry = true
             $0.addLeftPadding()
         }
         hobbyLabel.do {

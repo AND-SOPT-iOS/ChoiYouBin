@@ -14,3 +14,8 @@ struct HobbyResponse: Codable {
 struct HobbyResult: Codable {
     let hobby: String
 }
+
+struct HobbyRequest: Codable {
+    let hobby: String
+    let password: String
+}

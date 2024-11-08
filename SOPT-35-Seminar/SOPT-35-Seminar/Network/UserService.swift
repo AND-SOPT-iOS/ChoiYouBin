@@ -189,6 +189,53 @@ class UserService {
             }
         }
     }
+    
+    func changeHobby(
+        hobby: String,
+        password: String,
+        completion: @escaping (Result<Bool, NetworkError>) -> Void
+    ) {
+        guard let token = TokenManager.shared.getToken() else {
+            completion(.failure(.unknownError))
+            return
+        }
+        
+        let url = Environment.baseURL + "/user"
+        
+        let headers: HTTPHeaders = [
+            "Content-Type": "application/json",
+            "token": token
+        ]
+        
+        let parameters = HobbyRequest(
+            hobby: hobby,
+            password: password
+        )
+        
+        AF.request(
+            url,
+            method: .put,
+            parameters: parameters,
+            encoder: JSONParameterEncoder.default,
+            headers: headers
+        )
+        .validate()
+        .response { response in
+            switch response.result {
+            case .success:
+                completion(.success(true))
+            case .failure:
+            guard let statusCode = response.response?.statusCode,
+                  let data = response.data else {
+                    completion(.failure(.unknownError))
+                    return
+                }
+                let error = self.handleStatusCode(statusCode, data: data)
+                completion(.failure(error))
+            }
+        }
+    }
+    
     /// 서버의 명세서 기반으로 에러 처리를 진행해줌
     func handleStatusCode(
         _ statusCode: Int,

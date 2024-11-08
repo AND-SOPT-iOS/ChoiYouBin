@@ -29,6 +29,10 @@ class HobbyViewController: UIViewController {
         setStyle()
         setUI()
         setLayout()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         getMyHobby()
     }
     

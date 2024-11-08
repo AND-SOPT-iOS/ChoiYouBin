@@ -12,6 +12,10 @@
 		02752BE62CDDE95400DF2E61 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02752BE52CDDE95400DF2E61 /* Environment.swift */; };
 		02752BE82CDDE98600DF2E61 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02752BE72CDDE98600DF2E61 /* NetworkError.swift */; };
 		02752BEA2CDDECA700DF2E61 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02752BE92CDDECA700DF2E61 /* SignUpViewController.swift */; };
+		02752BEC2CDE02CB00DF2E61 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02752BEB2CDE02CB00DF2E61 /* TabBarController.swift */; };
+		02752BEE2CDE108A00DF2E61 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02752BED2CDE108A00DF2E61 /* LoginViewController.swift */; };
+		02752BF02CDE146600DF2E61 /* showToast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02752BEF2CDE146600DF2E61 /* showToast.swift */; };
+		02752BF22CDE1BAA00DF2E61 /* HobbyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02752BF12CDE1BAA00DF2E61 /* HobbyViewController.swift */; };
 		02B1A20E2CB1019200E91477 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B1A20D2CB1019200E91477 /* AppDelegate.swift */; };
 		02B1A2102CB1019200E91477 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B1A20F2CB1019200E91477 /* SceneDelegate.swift */; };
 		02B1A2122CB1019200E91477 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B1A2112CB1019200E91477 /* ViewController.swift */; };
@@ -74,6 +78,10 @@
 		02752BE52CDDE95400DF2E61 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
 		02752BE72CDDE98600DF2E61 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		02752BE92CDDECA700DF2E61 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		02752BEB2CDE02CB00DF2E61 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		02752BED2CDE108A00DF2E61 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		02752BEF2CDE146600DF2E61 /* showToast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = showToast.swift; sourceTree = "<group>"; };
+		02752BF12CDE1BAA00DF2E61 /* HobbyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HobbyViewController.swift; sourceTree = "<group>"; };
 		02B1A20A2CB1019200E91477 /* SOPT-35-Seminar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SOPT-35-Seminar.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		02B1A20D2CB1019200E91477 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		02B1A20F2CB1019200E91477 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -153,6 +161,8 @@
 				02752BE52CDDE95400DF2E61 /* Environment.swift */,
 				02752BE72CDDE98600DF2E61 /* NetworkError.swift */,
 				02752BE92CDDECA700DF2E61 /* SignUpViewController.swift */,
+				02752BED2CDE108A00DF2E61 /* LoginViewController.swift */,
+				02752BF12CDE1BAA00DF2E61 /* HobbyViewController.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -193,6 +203,7 @@
 				02B1A2232CB4121200E91477 /* .gitignore */,
 				02B1A2312CBA59D400E91477 /* ColorViewController.swift */,
 				02752BDD2CDDA6F500DF2E61 /* Config.xcconfig */,
+				02752BEB2CDE02CB00DF2E61 /* TabBarController.swift */,
 			);
 			path = "SOPT-35-Seminar";
 			sourceTree = "<group>";
@@ -204,6 +215,7 @@
 				02B1A2412CCBB68A00E91477 /* setImageTintColor.swift */,
 				02B1A25B2CCE479B00E91477 /* UIStackView+.swift */,
 				02B1A2772CD3FA7D00E91477 /* ClassName.swift */,
+				02752BEF2CDE146600DF2E61 /* showToast.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -481,10 +493,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				02B1A2122CB1019200E91477 /* ViewController.swift in Sources */,
+				02752BEC2CDE02CB00DF2E61 /* TabBarController.swift in Sources */,
+				02752BF22CDE1BAA00DF2E61 /* HobbyViewController.swift in Sources */,
 				02B1A28E2CD4EDCB00E91477 /* ReviewModel.swift in Sources */,
 				02B1A2722CD3E14B00E91477 /* FinanceCateView.swift in Sources */,
 				02B1A28A2CD4D61700E91477 /* PreviewImageCell.swift in Sources */,
 				02B1A2742CD3E4D700E91477 /* MainCell.swift in Sources */,
+				02752BF02CDE146600DF2E61 /* showToast.swift in Sources */,
 				02B1A2762CD3F45E00E91477 /* BannerModel.swift in Sources */,
 				02B1A2612CCEA6CD00E91477 /* AppPreviewView.swift in Sources */,
 				02B1A20E2CB1019200E91477 /* AppDelegate.swift in Sources */,
@@ -504,6 +519,7 @@
 				02B1A2542CCCC83300E91477 /* PhotoCell.swift in Sources */,
 				02B1A2652CCFBA4900E91477 /* AppReviewView.swift in Sources */,
 				02B1A2782CD3FA7D00E91477 /* ClassName.swift in Sources */,
+				02752BEE2CDE108A00DF2E61 /* LoginViewController.swift in Sources */,
 				02B1A2862CD48EAB00E91477 /* EssentialCollectionViewCell.swift in Sources */,
 				02B1A26D2CD3D48E00E91477 /* CompositionalLayout.swift in Sources */,
 				02B1A2692CCFEACE00E91477 /* AppReviewWriteView.swift in Sources */,

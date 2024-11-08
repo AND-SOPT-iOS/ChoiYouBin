@@ -1,24 +1,22 @@
 //
-//  SignUpViewController.swift
+//  LoginViewController.swift
 //  SOPT-35-Seminar
 //
 //  Created by 최유빈 on 11/8/24.
 //
 
 import UIKit
-import Then
-import SnapKit
 
-class SignUpViewController: UIViewController {
-    
+class LoginViewController: UIViewController {
+
     private let userService = UserService()
     private let titleLabel = UILabel()
     private let userNameLabel = UILabel()
     private let userNameTextField = UITextField()
     private let passwordLabel = UILabel()
     private let passwordTextField = UITextField()
+    private let loginButton = UIButton()
     private let signUpButton = UIButton()
-    private let resultLabel = UILabel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,9 +29,9 @@ class SignUpViewController: UIViewController {
     private func setStyle() {
         self.view.backgroundColor = .white
         titleLabel.do {
-            $0.text = "회원가입"
+            $0.text = "Week 4 Seminar"
             $0.textColor = .gray
-            $0.font = .systemFont(ofSize: 40, weight: .bold)
+            $0.font = .systemFont(ofSize: 28, weight: .bold)
         }
         userNameLabel.do {
             $0.text = "유저이름"
@@ -63,21 +61,23 @@ class SignUpViewController: UIViewController {
             $0.layer.borderColor = UIColor.gray.cgColor
             $0.layer.cornerRadius = 5.0
         }
-        signUpButton.do {
-            $0.setTitle("회원가입", for: .normal)
+        loginButton.do {
+            $0.setTitle("로그인", for: .normal)
             $0.setTitleColor(.white, for: .normal)
-            $0.addTarget(self, action: #selector(signUpButtonTapped), for: .touchUpInside)
+            $0.addTarget(self, action: #selector(loginButtonTapped), for: .touchUpInside)
             $0.backgroundColor = .tintColor
             $0.layer.cornerRadius = 5.0
         }
-        resultLabel.do {
-            $0.font = .systemFont(ofSize: 14)
-            $0.textColor = .black
+        signUpButton.do {
+            $0.setTitle("회원가입", for: .normal)
+            $0.setTitleColor(.black, for: .normal)
+            $0.titleLabel?.font = .systemFont(ofSize: 14)
+            $0.addTarget(self, action: #selector(navigateToSignUp), for: .touchUpInside)
         }
     }
     
     private func setUI() {
-        self.view.addSubviews(titleLabel, userNameLabel,userNameTextField, passwordLabel, passwordTextField, signUpButton, resultLabel)
+        self.view.addSubviews(titleLabel, userNameLabel,userNameTextField, passwordLabel, passwordTextField, loginButton, signUpButton)
     }
     
     private func setLayout() {
@@ -102,36 +102,42 @@ class SignUpViewController: UIViewController {
             $0.horizontalEdges.height.equalTo(userNameTextField)
             $0.top.equalTo(passwordLabel.snp.bottom).offset(5)
         }
-        signUpButton.snp.makeConstraints {
+        loginButton.snp.makeConstraints {
             $0.horizontalEdges.equalTo(userNameTextField)
             $0.height.equalTo(50)
             $0.top.equalTo(passwordTextField.snp.bottom).offset(20)
         }
-        resultLabel.snp.makeConstraints {
+        signUpButton.snp.makeConstraints {
             $0.centerX.equalToSuperview()
-            $0.top.equalTo(signUpButton.snp.bottom).offset(20)
+            $0.top.equalTo(loginButton.snp.bottom).offset(20)
         }
         
     }
     
-    @objc func signUpButtonTapped() {
-        userService.register(
+    @objc func loginButtonTapped() {
+        userService.login(
             username: userNameTextField.text!,
-            password: passwordTextField.text!,
-            hobby: "농구"
+            password: passwordTextField.text!
         ) { [weak self] result in
             DispatchQueue.main.async {
                 guard let self = self else { return }
                 
                 switch result {
                 case .success:
-                    self.showToast(message: "회원 등록 성공했어요.") {
-                        self.navigationController?.popViewController(animated: true)
+                    self.showToast(message: "로그인 성공!") {
+                        let tabBarController = TabBarController()
+                        (UIApplication.shared.connectedScenes.first?.delegate as? SceneDelegate)?.changeRootViewController(tabBarController)
                     }
                 case let .failure(error):
                     self.showToast(message: error.errorMessage)
                 }
             }
         }
+    }
+    
+    @objc func navigateToSignUp() {
+        let nextViewController = SignUpViewController()
+        navigationItem.backButtonTitle = "로그인"
+        self.navigationController?.pushViewController(nextViewController, animated: true)
     }
 }

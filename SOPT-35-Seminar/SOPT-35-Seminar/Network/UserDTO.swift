@@ -12,3 +12,8 @@ struct RegisterRequest: Codable {
     let password: String
     let hobby: String
 }
+
+struct LoginRequest: Codable {
+    let username: String
+    let password: String
+}

@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		02752BE22CDDE67A00DF2E61 /* UserDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02752BE12CDDE67A00DF2E61 /* UserDTO.swift */; };
+		02752BE42CDDE8FA00DF2E61 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02752BE32CDDE8FA00DF2E61 /* UserService.swift */; };
+		02752BE62CDDE95400DF2E61 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02752BE52CDDE95400DF2E61 /* Environment.swift */; };
+		02752BE82CDDE98600DF2E61 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02752BE72CDDE98600DF2E61 /* NetworkError.swift */; };
 		02B1A20E2CB1019200E91477 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B1A20D2CB1019200E91477 /* AppDelegate.swift */; };
 		02B1A2102CB1019200E91477 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B1A20F2CB1019200E91477 /* SceneDelegate.swift */; };
 		02B1A2122CB1019200E91477 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B1A2112CB1019200E91477 /* ViewController.swift */; };
@@ -64,6 +68,10 @@
 
 /* Begin PBXFileReference section */
 		02752BDD2CDDA6F500DF2E61 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
+		02752BE12CDDE67A00DF2E61 /* UserDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDTO.swift; sourceTree = "<group>"; };
+		02752BE32CDDE8FA00DF2E61 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		02752BE52CDDE95400DF2E61 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
+		02752BE72CDDE98600DF2E61 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		02B1A20A2CB1019200E91477 /* SOPT-35-Seminar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SOPT-35-Seminar.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		02B1A20D2CB1019200E91477 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		02B1A20F2CB1019200E91477 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -135,6 +143,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		02752BDE2CDDE64F00DF2E61 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				02752BE12CDDE67A00DF2E61 /* UserDTO.swift */,
+				02752BE32CDDE8FA00DF2E61 /* UserService.swift */,
+				02752BE52CDDE95400DF2E61 /* Environment.swift */,
+				02752BE72CDDE98600DF2E61 /* NetworkError.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 		02B1A2012CB1019200E91477 = {
 			isa = PBXGroup;
 			children = (
@@ -156,6 +175,7 @@
 		02B1A20C2CB1019200E91477 /* SOPT-35-Seminar */ = {
 			isa = PBXGroup;
 			children = (
+				02752BDE2CDDE64F00DF2E61 /* Network */,
 				02B1A26E2CD3DE5B00E91477 /* AppStore */,
 				02B1A2502CCCC60100E91477 /* CollectionView */,
 				02B1A2262CB4285600E91477 /* Extension */,
@@ -469,12 +489,14 @@
 				02B1A2842CD48D1D00E91477 /* EssentialChartCell.swift in Sources */,
 				02B1A2632CCFA89800E91477 /* AppInfoView.swift in Sources */,
 				02B1A25F2CCE932F00E91477 /* AppNewsView.swift in Sources */,
+				02752BE22CDDE67A00DF2E61 /* UserDTO.swift in Sources */,
 				02B1A2672CCFDEDD00E91477 /* AppHelpfulReviewView.swift in Sources */,
 				02B1A2402CCBA40200E91477 /* reviewDetailViewController.swift in Sources */,
 				02B1A2102CB1019200E91477 /* SceneDelegate.swift in Sources */,
 				02B1A2522CCCC77D00E91477 /* Photo.swift in Sources */,
 				02B1A2442CCBD01000E91477 /* TossEntryViewController.swift in Sources */,
 				02B1A2482CCCB59B00E91477 /* App.swift in Sources */,
+				02752BE82CDDE98600DF2E61 /* NetworkError.swift in Sources */,
 				02B1A25C2CCE479B00E91477 /* UIStackView+.swift in Sources */,
 				02B1A2542CCCC83300E91477 /* PhotoCell.swift in Sources */,
 				02B1A2652CCFBA4900E91477 /* AppReviewView.swift in Sources */,
@@ -487,6 +509,7 @@
 				02B1A27E2CD47ED400E91477 /* FreeCollectionViewCell.swift in Sources */,
 				02B1A27C2CD473A600E91477 /* PaidChartCell.swift in Sources */,
 				02B1A23A2CCB673E00E91477 /* versionRecordViewController.swift in Sources */,
+				02752BE62CDDE95400DF2E61 /* Environment.swift in Sources */,
 				02B1A2342CC409D800E91477 /* AppStoreViewController.swift in Sources */,
 				02B1A23E2CCBA27800E91477 /* WriteStarRatingView.swift in Sources */,
 				02B1A28C2CD4ED7D00E91477 /* ReviewCell.swift in Sources */,
@@ -500,6 +523,7 @@
 				02B1A2422CCBB68A00E91477 /* setImageTintColor.swift in Sources */,
 				02B1A26B2CD3D22700E91477 /* FinanceCateViewController.swift in Sources */,
 				02B1A24F2CCCC5FD00E91477 /* PhotoViewController.swift in Sources */,
+				02752BE42CDDE8FA00DF2E61 /* UserService.swift in Sources */,
 				02B1A2462CCCB4D300E91477 /* ChartViewController.swift in Sources */,
 				02B1A2582CCE3A0100E91477 /* AppDetailHeaderView.swift in Sources */,
 				02B1A2802CD4842800E91477 /* FinanceChartCell.swift in Sources */,

@@ -39,13 +39,14 @@ class LoginViewController: UIViewController {
             $0.font = .systemFont(ofSize: 14)
         }
         userNameTextField.do {
-            $0.placeholder = " userName"
+            $0.placeholder = "userName"
             $0.font = .systemFont(ofSize: 14)
             $0.textColor = .black
             $0.backgroundColor = .white
             $0.layer.borderWidth = 1.0
             $0.layer.borderColor = UIColor.gray.cgColor
             $0.layer.cornerRadius = 5.0
+            $0.addLeftPadding()
         }
         passwordLabel.do {
             $0.text = "비밀번호"
@@ -53,13 +54,14 @@ class LoginViewController: UIViewController {
             $0.font = .systemFont(ofSize: 14)
         }
         passwordTextField.do {
-            $0.placeholder = " password"
+            $0.placeholder = "password"
             $0.font = .systemFont(ofSize: 14)
             $0.textColor = .black
             $0.backgroundColor = .white
             $0.layer.borderWidth = 1.0
             $0.layer.borderColor = UIColor.gray.cgColor
             $0.layer.cornerRadius = 5.0
+            $0.addLeftPadding()
         }
         loginButton.do {
             $0.setTitle("로그인", for: .normal)

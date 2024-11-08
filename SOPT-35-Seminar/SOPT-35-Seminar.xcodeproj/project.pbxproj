@@ -16,6 +16,7 @@
 		02752BEE2CDE108A00DF2E61 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02752BED2CDE108A00DF2E61 /* LoginViewController.swift */; };
 		02752BF02CDE146600DF2E61 /* showToast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02752BEF2CDE146600DF2E61 /* showToast.swift */; };
 		02752BF22CDE1BAA00DF2E61 /* HobbyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02752BF12CDE1BAA00DF2E61 /* HobbyViewController.swift */; };
+		02752BF42CDE1EF100DF2E61 /* UITextField+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02752BF32CDE1EF100DF2E61 /* UITextField+.swift */; };
 		02B1A20E2CB1019200E91477 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B1A20D2CB1019200E91477 /* AppDelegate.swift */; };
 		02B1A2102CB1019200E91477 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B1A20F2CB1019200E91477 /* SceneDelegate.swift */; };
 		02B1A2122CB1019200E91477 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B1A2112CB1019200E91477 /* ViewController.swift */; };
@@ -82,6 +83,7 @@
 		02752BED2CDE108A00DF2E61 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		02752BEF2CDE146600DF2E61 /* showToast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = showToast.swift; sourceTree = "<group>"; };
 		02752BF12CDE1BAA00DF2E61 /* HobbyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HobbyViewController.swift; sourceTree = "<group>"; };
+		02752BF32CDE1EF100DF2E61 /* UITextField+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+.swift"; sourceTree = "<group>"; };
 		02B1A20A2CB1019200E91477 /* SOPT-35-Seminar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SOPT-35-Seminar.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		02B1A20D2CB1019200E91477 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		02B1A20F2CB1019200E91477 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -216,6 +218,7 @@
 				02B1A25B2CCE479B00E91477 /* UIStackView+.swift */,
 				02B1A2772CD3FA7D00E91477 /* ClassName.swift */,
 				02752BEF2CDE146600DF2E61 /* showToast.swift */,
+				02752BF32CDE1EF100DF2E61 /* UITextField+.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -543,6 +546,7 @@
 				02B1A2422CCBB68A00E91477 /* setImageTintColor.swift in Sources */,
 				02B1A26B2CD3D22700E91477 /* FinanceCateViewController.swift in Sources */,
 				02B1A24F2CCCC5FD00E91477 /* PhotoViewController.swift in Sources */,
+				02752BF42CDE1EF100DF2E61 /* UITextField+.swift in Sources */,
 				02752BE42CDDE8FA00DF2E61 /* UserService.swift in Sources */,
 				02B1A2462CCCB4D300E91477 /* ChartViewController.swift in Sources */,
 				02B1A2582CCE3A0100E91477 /* AppDetailHeaderView.swift in Sources */,

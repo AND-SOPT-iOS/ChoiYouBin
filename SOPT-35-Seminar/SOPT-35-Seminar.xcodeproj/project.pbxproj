@@ -21,6 +21,7 @@
 		02752BF92CDE317200DF2E61 /* HobbyDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02752BF82CDE317200DF2E61 /* HobbyDTO.swift */; };
 		02752BFB2CDE377E00DF2E61 /* ChangeHobbyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02752BFA2CDE377E00DF2E61 /* ChangeHobbyViewController.swift */; };
 		02752C002CE117A500DF2E61 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02752BFF2CE117A500DF2E61 /* LoginView.swift */; };
+		02752C042CE11C5400DF2E61 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02752C032CE11C5400DF2E61 /* SignUpView.swift */; };
 		02B1A20E2CB1019200E91477 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B1A20D2CB1019200E91477 /* AppDelegate.swift */; };
 		02B1A2102CB1019200E91477 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B1A20F2CB1019200E91477 /* SceneDelegate.swift */; };
 		02B1A2122CB1019200E91477 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B1A2112CB1019200E91477 /* ViewController.swift */; };
@@ -92,6 +93,7 @@
 		02752BF82CDE317200DF2E61 /* HobbyDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HobbyDTO.swift; sourceTree = "<group>"; };
 		02752BFA2CDE377E00DF2E61 /* ChangeHobbyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeHobbyViewController.swift; sourceTree = "<group>"; };
 		02752BFF2CE117A500DF2E61 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		02752C032CE11C5400DF2E61 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		02B1A20A2CB1019200E91477 /* SOPT-35-Seminar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SOPT-35-Seminar.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		02B1A20D2CB1019200E91477 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		02B1A20F2CB1019200E91477 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -166,16 +168,13 @@
 		02752BDE2CDDE64F00DF2E61 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				02752C022CE11C2500DF2E61 /* ViewController */,
+				02752C012CE11C1F00DF2E61 /* View */,
 				02752BF72CDE311500DF2E61 /* DTO */,
 				02752BE32CDDE8FA00DF2E61 /* UserService.swift */,
 				02752BE52CDDE95400DF2E61 /* Environment.swift */,
 				02752BE72CDDE98600DF2E61 /* NetworkError.swift */,
-				02752BE92CDDECA700DF2E61 /* SignUpViewController.swift */,
-				02752BED2CDE108A00DF2E61 /* LoginViewController.swift */,
-				02752BF12CDE1BAA00DF2E61 /* HobbyViewController.swift */,
 				02752BF52CDE29A900DF2E61 /* TokenManager.swift */,
-				02752BFA2CDE377E00DF2E61 /* ChangeHobbyViewController.swift */,
-				02752BFF2CE117A500DF2E61 /* LoginView.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -187,6 +186,26 @@
 				02752BF82CDE317200DF2E61 /* HobbyDTO.swift */,
 			);
 			path = DTO;
+			sourceTree = "<group>";
+		};
+		02752C012CE11C1F00DF2E61 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				02752BFF2CE117A500DF2E61 /* LoginView.swift */,
+				02752C032CE11C5400DF2E61 /* SignUpView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		02752C022CE11C2500DF2E61 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				02752BFA2CDE377E00DF2E61 /* ChangeHobbyViewController.swift */,
+				02752BED2CDE108A00DF2E61 /* LoginViewController.swift */,
+				02752BF12CDE1BAA00DF2E61 /* HobbyViewController.swift */,
+				02752BE92CDDECA700DF2E61 /* SignUpViewController.swift */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 		02B1A2012CB1019200E91477 = {
@@ -532,6 +551,7 @@
 				02B1A2632CCFA89800E91477 /* AppInfoView.swift in Sources */,
 				02B1A25F2CCE932F00E91477 /* AppNewsView.swift in Sources */,
 				02752BE22CDDE67A00DF2E61 /* UserDTO.swift in Sources */,
+				02752C042CE11C5400DF2E61 /* SignUpView.swift in Sources */,
 				02B1A2672CCFDEDD00E91477 /* AppHelpfulReviewView.swift in Sources */,
 				02752C002CE117A500DF2E61 /* LoginView.swift in Sources */,
 				02B1A2402CCBA40200E91477 /* reviewDetailViewController.swift in Sources */,

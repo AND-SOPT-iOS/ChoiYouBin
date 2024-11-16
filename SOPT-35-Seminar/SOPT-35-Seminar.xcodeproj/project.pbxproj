@@ -22,6 +22,8 @@
 		02752BFB2CDE377E00DF2E61 /* ChangeHobbyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02752BFA2CDE377E00DF2E61 /* ChangeHobbyViewController.swift */; };
 		02752C002CE117A500DF2E61 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02752BFF2CE117A500DF2E61 /* LoginView.swift */; };
 		02752C042CE11C5400DF2E61 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02752C032CE11C5400DF2E61 /* SignUpView.swift */; };
+		02752C062CE841AF00DF2E61 /* HobbyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02752C052CE841AF00DF2E61 /* HobbyView.swift */; };
+		02752C082CE841C200DF2E61 /* ChangeHobbyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02752C072CE841C200DF2E61 /* ChangeHobbyView.swift */; };
 		02B1A20E2CB1019200E91477 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B1A20D2CB1019200E91477 /* AppDelegate.swift */; };
 		02B1A2102CB1019200E91477 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B1A20F2CB1019200E91477 /* SceneDelegate.swift */; };
 		02B1A2122CB1019200E91477 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B1A2112CB1019200E91477 /* ViewController.swift */; };
@@ -94,6 +96,8 @@
 		02752BFA2CDE377E00DF2E61 /* ChangeHobbyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeHobbyViewController.swift; sourceTree = "<group>"; };
 		02752BFF2CE117A500DF2E61 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		02752C032CE11C5400DF2E61 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		02752C052CE841AF00DF2E61 /* HobbyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HobbyView.swift; sourceTree = "<group>"; };
+		02752C072CE841C200DF2E61 /* ChangeHobbyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeHobbyView.swift; sourceTree = "<group>"; };
 		02B1A20A2CB1019200E91477 /* SOPT-35-Seminar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SOPT-35-Seminar.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		02B1A20D2CB1019200E91477 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		02B1A20F2CB1019200E91477 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -193,6 +197,8 @@
 			children = (
 				02752BFF2CE117A500DF2E61 /* LoginView.swift */,
 				02752C032CE11C5400DF2E61 /* SignUpView.swift */,
+				02752C052CE841AF00DF2E61 /* HobbyView.swift */,
+				02752C072CE841C200DF2E61 /* ChangeHobbyView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -538,6 +544,7 @@
 				02752BEC2CDE02CB00DF2E61 /* TabBarController.swift in Sources */,
 				02752BF22CDE1BAA00DF2E61 /* HobbyViewController.swift in Sources */,
 				02B1A28E2CD4EDCB00E91477 /* ReviewModel.swift in Sources */,
+				02752C082CE841C200DF2E61 /* ChangeHobbyView.swift in Sources */,
 				02B1A2722CD3E14B00E91477 /* FinanceCateView.swift in Sources */,
 				02B1A28A2CD4D61700E91477 /* PreviewImageCell.swift in Sources */,
 				02752BF62CDE29A900DF2E61 /* TokenManager.swift in Sources */,
@@ -595,6 +602,7 @@
 				02B1A2462CCCB4D300E91477 /* ChartViewController.swift in Sources */,
 				02B1A2582CCE3A0100E91477 /* AppDetailHeaderView.swift in Sources */,
 				02B1A2802CD4842800E91477 /* FinanceChartCell.swift in Sources */,
+				02752C062CE841AF00DF2E61 /* HobbyView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

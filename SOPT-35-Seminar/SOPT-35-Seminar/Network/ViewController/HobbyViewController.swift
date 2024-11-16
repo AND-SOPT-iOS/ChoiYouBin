@@ -12,23 +12,16 @@ import SnapKit
 class HobbyViewController: UIViewController {
     
     private let userService = UserService()
-    private let horizontalDivider = UIView()
-    private let titleLabel = UILabel()
-    private let hobbyLabel = UILabel()
-    private let changeHobbyButton = UIButton()
-    private let secondHorizontalDivider = UIView()
-    private let otherTitleLabel = UILabel()
-    private let otherHobbyLabel = UILabel()
-    private let numberLabel = UILabel()
-    private let numberTextField = UITextField()
-    private let searchButton = UIButton()
-
+    private let hobbyView = HobbyView()
+    
+    override func loadView() {
+        view = hobbyView
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        setStyle()
-        setUI()
-        setLayout()
+        setAddTarget()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -36,112 +29,10 @@ class HobbyViewController: UIViewController {
         getMyHobby()
     }
     
-    private func setStyle() {
-        self.view.backgroundColor = .white
-        titleLabel.do {
-            $0.text = "내 취미"
-            $0.font = .systemFont(ofSize: 30, weight: .bold)
-            $0.textColor = .black
-        }
-        horizontalDivider.do {
-            $0.backgroundColor = .gray
-        }
-        hobbyLabel.do {
-            $0.text = ""
-            $0.font = .systemFont(ofSize: 20, weight: .bold)
-            $0.textColor = .tintColor
-        }
-        changeHobbyButton.do {
-            $0.setTitle("취미 변경하기", for: .normal)
-            $0.setTitleColor(.gray, for: .normal)
-            $0.titleLabel?.font = .systemFont(ofSize: 16)
-            $0.addTarget(self, action: #selector(navigateToChange), for: .touchUpInside)
-        }
-        otherTitleLabel.do {
-            $0.text = "다른 사람 취미 검색"
-            $0.font = .systemFont(ofSize: 30, weight: .bold)
-            $0.textColor = .black
-        }
-        secondHorizontalDivider.do {
-            $0.backgroundColor = .gray
-        }
-        otherHobbyLabel.do {
-            $0.text = "다른 사람 취미"
-            $0.font = .systemFont(ofSize: 20, weight: .bold)
-            $0.textColor = .tintColor
-        }
-        numberLabel.do {
-            $0.text = "검색하고 싶은 번호를 입력해주세요"
-            $0.font = .systemFont(ofSize: 12)
-            $0.textColor = .black
-        }
-        numberTextField.do {
-            $0.placeholder = "번호 입력"
-            $0.font = .systemFont(ofSize: 12)
-            $0.textColor = .black
-            $0.backgroundColor = .white
-            $0.layer.borderWidth = 1.0
-            $0.layer.borderColor = UIColor.gray.cgColor
-            $0.layer.cornerRadius = 5.0
-            $0.addLeftPadding()
-        }
-        searchButton.do {
-            $0.setTitle("검색 하기", for: .normal)
-            $0.setTitleColor(.gray, for: .normal)
-            $0.titleLabel?.font = .systemFont(ofSize: 12)
-            $0.addTarget(self, action: #selector(getOtherHobby), for: .touchUpInside)
-        }
-    }
-    
-    private func setUI() {
-        self.view.addSubviews(titleLabel, horizontalDivider, hobbyLabel, changeHobbyButton, otherTitleLabel, secondHorizontalDivider, otherHobbyLabel, numberLabel, numberTextField, searchButton)
-    }
-    
-    private func setLayout() {
-        titleLabel.snp.makeConstraints {
-            $0.leading.equalToSuperview().offset(20)
-            $0.top.equalToSuperview().offset(100)
-        }
-        horizontalDivider.snp.makeConstraints {
-            $0.horizontalEdges.equalToSuperview().inset(20)
-            $0.height.equalTo(1)
-            $0.top.equalTo(titleLabel.snp.bottom).offset(5)
-        }
-        hobbyLabel.snp.makeConstraints {
-            $0.centerX.equalToSuperview()
-            $0.top.equalTo(horizontalDivider.snp.bottom).offset(20)
-        }
-        changeHobbyButton.snp.makeConstraints {
-            $0.bottom.equalTo(titleLabel.snp.bottom)
-            $0.trailing.equalToSuperview().offset(-20)
-        }
-        otherTitleLabel.snp.makeConstraints {
-            $0.leading.equalToSuperview().offset(20)
-            $0.top.equalTo(hobbyLabel.snp.bottom).offset(50)
-        }
-        secondHorizontalDivider.snp.makeConstraints {
-            $0.horizontalEdges.equalToSuperview().inset(20)
-            $0.height.equalTo(1)
-            $0.top.equalTo(otherTitleLabel.snp.bottom).offset(5)
-        }
-        searchButton.snp.makeConstraints {
-            $0.centerY.equalTo(numberLabel)
-            $0.trailing.equalToSuperview().offset(-20)
-        }
-        numberLabel.snp.makeConstraints {
-            $0.leading.equalTo(otherTitleLabel)
-            $0.top.equalTo(secondHorizontalDivider.snp.bottom).offset(20)
-        }
-        numberTextField.snp.makeConstraints {
-            $0.top.equalTo(numberLabel.snp.bottom).offset(10)
-            $0.horizontalEdges.equalToSuperview().inset(20)
-            $0.height.equalTo(40)
-        }
-        otherHobbyLabel.snp.makeConstraints {
-            $0.centerX.equalToSuperview()
-            $0.top.equalTo(numberTextField.snp.bottom).offset(20)
-        }
+    private func setAddTarget() {
+        hobbyView.changeHobbyButton.addTarget(self, action: #selector(navigateToChange), for: .touchUpInside)
         
+        hobbyView.searchButton.addTarget(self, action: #selector(getOtherHobby), for: .touchUpInside)
     }
     
     private func getMyHobby() {
@@ -151,9 +42,9 @@ class HobbyViewController: UIViewController {
                 
                 switch result {
                 case .success(let hobbyResponse):
-                    self.hobbyLabel.text = hobbyResponse.result.hobby
+                    self.hobbyView.hobbyLabel.text = hobbyResponse.result.hobby
                 case .failure(let error):
-                    self.hobbyLabel.text = "취미 정보 없음"
+                    self.hobbyView.hobbyLabel.text = "취미 정보 없음"
                     self.showToast(message: "취미를 불러오지 못했습니다: \(error.errorMessage)")
                 }
             }
@@ -161,7 +52,7 @@ class HobbyViewController: UIViewController {
     }
     
     @objc func getOtherHobby() {
-        guard let userNoString = numberTextField.text,
+        guard let userNoString = hobbyView.numberTextField.text,
               let userNo = Int(userNoString) else {
             showToast(message: "올바른 사용자 번호를 입력해주세요.")
             return
@@ -173,9 +64,9 @@ class HobbyViewController: UIViewController {
                 
                 switch result {
                 case .success(let hobbyResponse):
-                    self.otherHobbyLabel.text = hobbyResponse.result.hobby
+                    self.hobbyView.otherHobbyLabel.text = hobbyResponse.result.hobby
                 case .failure:
-                    self.otherHobbyLabel.text = "취미 정보 없음"
+                    self.hobbyView.otherHobbyLabel.text = "취미 정보 없음"
                     self.showToast(message: "취미 호출 실패")
                 }
             }

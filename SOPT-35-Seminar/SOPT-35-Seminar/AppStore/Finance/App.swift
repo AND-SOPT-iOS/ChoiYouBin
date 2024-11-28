@@ -155,7 +155,7 @@ extension App {
             downloadState: .download
         ),
         App(
-            id: UUID(), 
+            id: UUID(),
             iconImage: .icon19,
             ranking: 16,
             title: "Outlook",

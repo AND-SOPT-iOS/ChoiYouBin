@@ -8,17 +8,19 @@
 import UIKit
 
 struct App {
+    let id: UUID
     let iconImage: UIImage
     let ranking: Int
     let title: String
     let subtitle: String
-    let category: String // TODO: AppCategory 추후 수정
+    let category: String
     let downloadState: DownloadState
 }
 
 extension App {
     static let sampleApps: [App] = [
         App(
+            id: UUID(),
             iconImage: .icon5,
             ranking: 1,
             title: "YouTube",
@@ -27,6 +29,7 @@ extension App {
             downloadState: .installed
         ),
         App(
+            id: UUID(),
             iconImage: .icon6,
             ranking: 2,
             title: "Netflix",
@@ -35,6 +38,7 @@ extension App {
             downloadState: .update
         ),
         App(
+            id: UUID(),
             iconImage: .tossIcon,
             ranking: 3,
             title: "토스",
@@ -43,6 +47,7 @@ extension App {
             downloadState: .redownload
         ),
         App(
+            id: UUID(),
             iconImage: .icon8,
             ranking: 4,
             title: "Instagram",
@@ -51,6 +56,7 @@ extension App {
             downloadState: .download
         ),
         App(
+            id: UUID(),
             iconImage: .icon9,
             ranking: 5,
             title: "Twitter",
@@ -59,6 +65,7 @@ extension App {
             downloadState: .redownload
         ),
         App(
+            id: UUID(),
             iconImage: .icon10,
             ranking: 6,
             title: "Spotify",
@@ -67,6 +74,7 @@ extension App {
             downloadState: .download
         ),
         App(
+            id: UUID(),
             iconImage: .icon11,
             ranking: 7,
             title: "쿠팡",
@@ -75,6 +83,7 @@ extension App {
             downloadState: .update
         ),
         App(
+            id: UUID(),
             iconImage: .icon12,
             ranking: 8,
             title: "네이버",
@@ -83,6 +92,7 @@ extension App {
             downloadState: .installed
         ),
         App(
+            id: UUID(),
             iconImage: .icon7,
             ranking: 9,
             title: "카카오톡",
@@ -91,6 +101,7 @@ extension App {
             downloadState: .installed
         ),
         App(
+            id: UUID(),
             iconImage: .icon13,
             ranking: 10,
             title: "배달의민족",
@@ -99,6 +110,7 @@ extension App {
             downloadState: .installed
         ),
         App(
+            id: UUID(),
             iconImage: .icon14,
             ranking: 11,
             title: "Discord",
@@ -107,6 +119,7 @@ extension App {
             downloadState: .download
         ),
         App(
+            id: UUID(),
             iconImage: .icon15,
             ranking: 12,
             title: "Google",
@@ -115,6 +128,7 @@ extension App {
             downloadState: .update
         ),
         App(
+            id: UUID(),
             iconImage: .icon16,
             ranking: 13,
             title: "Facebook",
@@ -123,6 +137,7 @@ extension App {
             downloadState: .redownload
         ),
         App(
+            id: UUID(),
             iconImage: .icon17,
             ranking: 14,
             title: "LINE",
@@ -131,6 +146,7 @@ extension App {
             downloadState: .installed
         ),
         App(
+            id: UUID(),
             iconImage: .icon18,
             ranking: 15,
             title: "Outlook",
@@ -139,6 +155,7 @@ extension App {
             downloadState: .download
         ),
         App(
+            id: UUID(),
             iconImage: .icon19,
             ranking: 16,
             title: "Outlook",
@@ -147,6 +164,7 @@ extension App {
             downloadState: .download
         ),
         App(
+            id: UUID(),
             iconImage: .icon20,
             ranking: 17,
             title: "Outlook",
@@ -155,6 +173,7 @@ extension App {
             downloadState: .download
         ),
         App(
+            id: UUID(),
             iconImage: .icon21,
             ranking: 18,
             title: "Outlook",
@@ -163,6 +182,7 @@ extension App {
             downloadState: .download
         ),
         App(
+            id: UUID(),
             iconImage: .icon22,
             ranking: 19,
             title: "Outlook",
@@ -171,6 +191,7 @@ extension App {
             downloadState: .download
         ),
         App(
+            id: UUID(),
             iconImage: .icon23,
             ranking: 20,
             title: "Outlook",
@@ -179,6 +200,7 @@ extension App {
             downloadState: .download
         ),
         App(
+            id: UUID(),
             iconImage: .icon24,
             ranking: 21,
             title: "Outlook",
@@ -187,6 +209,7 @@ extension App {
             downloadState: .download
         ),
         App(
+            id: UUID(),
             iconImage: .icon25,
             ranking: 22,
             title: "Outlook",
@@ -195,6 +218,7 @@ extension App {
             downloadState: .download
         ),
         App(
+            id: UUID(),
             iconImage: .icon26,
             ranking: 23,
             title: "Outlook",
@@ -202,6 +226,7 @@ extension App {
             category: "생산성",
             downloadState: .download
         ),App(
+            id: UUID(),
             iconImage: .icon27,
             ranking: 24,
             title: "Outlook",
@@ -210,6 +235,7 @@ extension App {
             downloadState: .download
         ),
         App(
+            id: UUID(),
             iconImage: .icon28,
             ranking: 26,
             title: "Outlook",
@@ -218,6 +244,7 @@ extension App {
             downloadState: .download
         ),
         App(
+            id: UUID(),
             iconImage: .icon29,
             ranking: 26,
             title: "Outlook",
@@ -226,6 +253,7 @@ extension App {
             downloadState: .download
         ),
         App(
+            id: UUID(),
             iconImage: .icon30,
             ranking: 27,
             title: "Outlook",

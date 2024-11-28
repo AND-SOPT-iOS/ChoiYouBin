@@ -7,6 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		02752BE22CDDE67A00DF2E61 /* UserDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02752BE12CDDE67A00DF2E61 /* UserDTO.swift */; };
+		02752BE42CDDE8FA00DF2E61 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02752BE32CDDE8FA00DF2E61 /* UserService.swift */; };
+		02752BE62CDDE95400DF2E61 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02752BE52CDDE95400DF2E61 /* Environment.swift */; };
+		02752BE82CDDE98600DF2E61 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02752BE72CDDE98600DF2E61 /* NetworkError.swift */; };
+		02752BEA2CDDECA700DF2E61 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02752BE92CDDECA700DF2E61 /* SignUpViewController.swift */; };
+		02752BEC2CDE02CB00DF2E61 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02752BEB2CDE02CB00DF2E61 /* TabBarController.swift */; };
+		02752BEE2CDE108A00DF2E61 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02752BED2CDE108A00DF2E61 /* LoginViewController.swift */; };
+		02752BF02CDE146600DF2E61 /* showToast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02752BEF2CDE146600DF2E61 /* showToast.swift */; };
+		02752BF22CDE1BAA00DF2E61 /* HobbyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02752BF12CDE1BAA00DF2E61 /* HobbyViewController.swift */; };
+		02752BF42CDE1EF100DF2E61 /* UITextField+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02752BF32CDE1EF100DF2E61 /* UITextField+.swift */; };
+		02752BF62CDE29A900DF2E61 /* TokenManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02752BF52CDE29A900DF2E61 /* TokenManager.swift */; };
+		02752BF92CDE317200DF2E61 /* HobbyDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02752BF82CDE317200DF2E61 /* HobbyDTO.swift */; };
+		02752BFB2CDE377E00DF2E61 /* ChangeHobbyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02752BFA2CDE377E00DF2E61 /* ChangeHobbyViewController.swift */; };
+		02752C002CE117A500DF2E61 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02752BFF2CE117A500DF2E61 /* LoginView.swift */; };
+		02752C042CE11C5400DF2E61 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02752C032CE11C5400DF2E61 /* SignUpView.swift */; };
+		02752C062CE841AF00DF2E61 /* HobbyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02752C052CE841AF00DF2E61 /* HobbyView.swift */; };
+		02752C082CE841C200DF2E61 /* ChangeHobbyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02752C072CE841C200DF2E61 /* ChangeHobbyView.swift */; };
 		02B1A20E2CB1019200E91477 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B1A20D2CB1019200E91477 /* AppDelegate.swift */; };
 		02B1A2102CB1019200E91477 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B1A20F2CB1019200E91477 /* SceneDelegate.swift */; };
 		02B1A2122CB1019200E91477 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B1A2112CB1019200E91477 /* ViewController.swift */; };
@@ -59,9 +76,28 @@
 		02B1A28A2CD4D61700E91477 /* PreviewImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B1A2892CD4D61700E91477 /* PreviewImageCell.swift */; };
 		02B1A28C2CD4ED7D00E91477 /* ReviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B1A28B2CD4ED7D00E91477 /* ReviewCell.swift */; };
 		02B1A28E2CD4EDCB00E91477 /* ReviewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B1A28D2CD4EDCB00E91477 /* ReviewModel.swift */; };
+		173813DA2ED2E793A18AB152 /* Pods_SOPT_35_Seminar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64A0D298AFC0A26F88139A77 /* Pods_SOPT_35_Seminar.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		02752BDD2CDDA6F500DF2E61 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
+		02752BE12CDDE67A00DF2E61 /* UserDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDTO.swift; sourceTree = "<group>"; };
+		02752BE32CDDE8FA00DF2E61 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		02752BE52CDDE95400DF2E61 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
+		02752BE72CDDE98600DF2E61 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		02752BE92CDDECA700DF2E61 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		02752BEB2CDE02CB00DF2E61 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		02752BED2CDE108A00DF2E61 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		02752BEF2CDE146600DF2E61 /* showToast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = showToast.swift; sourceTree = "<group>"; };
+		02752BF12CDE1BAA00DF2E61 /* HobbyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HobbyViewController.swift; sourceTree = "<group>"; };
+		02752BF32CDE1EF100DF2E61 /* UITextField+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+.swift"; sourceTree = "<group>"; };
+		02752BF52CDE29A900DF2E61 /* TokenManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenManager.swift; sourceTree = "<group>"; };
+		02752BF82CDE317200DF2E61 /* HobbyDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HobbyDTO.swift; sourceTree = "<group>"; };
+		02752BFA2CDE377E00DF2E61 /* ChangeHobbyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeHobbyViewController.swift; sourceTree = "<group>"; };
+		02752BFF2CE117A500DF2E61 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		02752C032CE11C5400DF2E61 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		02752C052CE841AF00DF2E61 /* HobbyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HobbyView.swift; sourceTree = "<group>"; };
+		02752C072CE841C200DF2E61 /* ChangeHobbyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeHobbyView.swift; sourceTree = "<group>"; };
 		02B1A20A2CB1019200E91477 /* SOPT-35-Seminar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SOPT-35-Seminar.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		02B1A20D2CB1019200E91477 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		02B1A20F2CB1019200E91477 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -114,6 +150,9 @@
 		02B1A2892CD4D61700E91477 /* PreviewImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewImageCell.swift; sourceTree = "<group>"; };
 		02B1A28B2CD4ED7D00E91477 /* ReviewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewCell.swift; sourceTree = "<group>"; };
 		02B1A28D2CD4EDCB00E91477 /* ReviewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewModel.swift; sourceTree = "<group>"; };
+		64A0D298AFC0A26F88139A77 /* Pods_SOPT_35_Seminar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SOPT_35_Seminar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		74234D363786865F6B5DF8A5 /* Pods-SOPT-35-Seminar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SOPT-35-Seminar.release.xcconfig"; path = "Target Support Files/Pods-SOPT-35-Seminar/Pods-SOPT-35-Seminar.release.xcconfig"; sourceTree = "<group>"; };
+		BCA52FF50C7E93CDACF8D406 /* Pods-SOPT-35-Seminar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SOPT-35-Seminar.debug.xcconfig"; path = "Target Support Files/Pods-SOPT-35-Seminar/Pods-SOPT-35-Seminar.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,17 +162,65 @@
 			files = (
 				02B1A22D2CBA4A8A00E91477 /* SnapKit in Frameworks */,
 				02B1A2302CBA4AD300E91477 /* Then in Frameworks */,
+				173813DA2ED2E793A18AB152 /* Pods_SOPT_35_Seminar.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		02752BDE2CDDE64F00DF2E61 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				02752C022CE11C2500DF2E61 /* ViewController */,
+				02752C012CE11C1F00DF2E61 /* View */,
+				02752BF72CDE311500DF2E61 /* DTO */,
+				02752BE32CDDE8FA00DF2E61 /* UserService.swift */,
+				02752BE52CDDE95400DF2E61 /* Environment.swift */,
+				02752BE72CDDE98600DF2E61 /* NetworkError.swift */,
+				02752BF52CDE29A900DF2E61 /* TokenManager.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		02752BF72CDE311500DF2E61 /* DTO */ = {
+			isa = PBXGroup;
+			children = (
+				02752BE12CDDE67A00DF2E61 /* UserDTO.swift */,
+				02752BF82CDE317200DF2E61 /* HobbyDTO.swift */,
+			);
+			path = DTO;
+			sourceTree = "<group>";
+		};
+		02752C012CE11C1F00DF2E61 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				02752BFF2CE117A500DF2E61 /* LoginView.swift */,
+				02752C032CE11C5400DF2E61 /* SignUpView.swift */,
+				02752C052CE841AF00DF2E61 /* HobbyView.swift */,
+				02752C072CE841C200DF2E61 /* ChangeHobbyView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		02752C022CE11C2500DF2E61 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				02752BFA2CDE377E00DF2E61 /* ChangeHobbyViewController.swift */,
+				02752BED2CDE108A00DF2E61 /* LoginViewController.swift */,
+				02752BF12CDE1BAA00DF2E61 /* HobbyViewController.swift */,
+				02752BE92CDDECA700DF2E61 /* SignUpViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
 		02B1A2012CB1019200E91477 = {
 			isa = PBXGroup;
 			children = (
 				02B1A20C2CB1019200E91477 /* SOPT-35-Seminar */,
 				02B1A20B2CB1019200E91477 /* Products */,
+				EF605D570752085E28B567C3 /* Pods */,
+				ECCFE00C0FC1F3EECFF629C4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -148,6 +235,7 @@
 		02B1A20C2CB1019200E91477 /* SOPT-35-Seminar */ = {
 			isa = PBXGroup;
 			children = (
+				02752BDE2CDDE64F00DF2E61 /* Network */,
 				02B1A26E2CD3DE5B00E91477 /* AppStore */,
 				02B1A2502CCCC60100E91477 /* CollectionView */,
 				02B1A2262CB4285600E91477 /* Extension */,
@@ -161,6 +249,8 @@
 				02B1A21B2CB1019600E91477 /* Info.plist */,
 				02B1A2232CB4121200E91477 /* .gitignore */,
 				02B1A2312CBA59D400E91477 /* ColorViewController.swift */,
+				02752BDD2CDDA6F500DF2E61 /* Config.xcconfig */,
+				02752BEB2CDE02CB00DF2E61 /* TabBarController.swift */,
 			);
 			path = "SOPT-35-Seminar";
 			sourceTree = "<group>";
@@ -172,6 +262,8 @@
 				02B1A2412CCBB68A00E91477 /* setImageTintColor.swift */,
 				02B1A25B2CCE479B00E91477 /* UIStackView+.swift */,
 				02B1A2772CD3FA7D00E91477 /* ClassName.swift */,
+				02752BEF2CDE146600DF2E61 /* showToast.swift */,
+				02752BF32CDE1EF100DF2E61 /* UITextField+.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -307,6 +399,23 @@
 			path = Component;
 			sourceTree = "<group>";
 		};
+		ECCFE00C0FC1F3EECFF629C4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				64A0D298AFC0A26F88139A77 /* Pods_SOPT_35_Seminar.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EF605D570752085E28B567C3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BCA52FF50C7E93CDACF8D406 /* Pods-SOPT-35-Seminar.debug.xcconfig */,
+				74234D363786865F6B5DF8A5 /* Pods-SOPT-35-Seminar.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -314,9 +423,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 02B1A21E2CB1019600E91477 /* Build configuration list for PBXNativeTarget "SOPT-35-Seminar" */;
 			buildPhases = (
+				BDAA28CD19669A160864BA58 /* [CP] Check Pods Manifest.lock */,
 				02B1A2062CB1019200E91477 /* Sources */,
 				02B1A2072CB1019200E91477 /* Frameworks */,
 				02B1A2082CB1019200E91477 /* Resources */,
+				DBBD7D898D726D6F7949E9F9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -382,16 +493,63 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		BDAA28CD19669A160864BA58 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SOPT-35-Seminar-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DBBD7D898D726D6F7949E9F9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SOPT-35-Seminar/Pods-SOPT-35-Seminar-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SOPT-35-Seminar/Pods-SOPT-35-Seminar-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SOPT-35-Seminar/Pods-SOPT-35-Seminar-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		02B1A2062CB1019200E91477 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				02B1A2122CB1019200E91477 /* ViewController.swift in Sources */,
+				02752BEC2CDE02CB00DF2E61 /* TabBarController.swift in Sources */,
+				02752BF22CDE1BAA00DF2E61 /* HobbyViewController.swift in Sources */,
 				02B1A28E2CD4EDCB00E91477 /* ReviewModel.swift in Sources */,
+				02752C082CE841C200DF2E61 /* ChangeHobbyView.swift in Sources */,
 				02B1A2722CD3E14B00E91477 /* FinanceCateView.swift in Sources */,
 				02B1A28A2CD4D61700E91477 /* PreviewImageCell.swift in Sources */,
+				02752BF62CDE29A900DF2E61 /* TokenManager.swift in Sources */,
 				02B1A2742CD3E4D700E91477 /* MainCell.swift in Sources */,
+				02752BF02CDE146600DF2E61 /* showToast.swift in Sources */,
 				02B1A2762CD3F45E00E91477 /* BannerModel.swift in Sources */,
 				02B1A2612CCEA6CD00E91477 /* AppPreviewView.swift in Sources */,
 				02B1A20E2CB1019200E91477 /* AppDelegate.swift in Sources */,
@@ -399,16 +557,22 @@
 				02B1A2842CD48D1D00E91477 /* EssentialChartCell.swift in Sources */,
 				02B1A2632CCFA89800E91477 /* AppInfoView.swift in Sources */,
 				02B1A25F2CCE932F00E91477 /* AppNewsView.swift in Sources */,
+				02752BE22CDDE67A00DF2E61 /* UserDTO.swift in Sources */,
+				02752C042CE11C5400DF2E61 /* SignUpView.swift in Sources */,
 				02B1A2672CCFDEDD00E91477 /* AppHelpfulReviewView.swift in Sources */,
+				02752C002CE117A500DF2E61 /* LoginView.swift in Sources */,
 				02B1A2402CCBA40200E91477 /* reviewDetailViewController.swift in Sources */,
 				02B1A2102CB1019200E91477 /* SceneDelegate.swift in Sources */,
 				02B1A2522CCCC77D00E91477 /* Photo.swift in Sources */,
 				02B1A2442CCBD01000E91477 /* TossEntryViewController.swift in Sources */,
+				02752BF92CDE317200DF2E61 /* HobbyDTO.swift in Sources */,
 				02B1A2482CCCB59B00E91477 /* App.swift in Sources */,
+				02752BE82CDDE98600DF2E61 /* NetworkError.swift in Sources */,
 				02B1A25C2CCE479B00E91477 /* UIStackView+.swift in Sources */,
 				02B1A2542CCCC83300E91477 /* PhotoCell.swift in Sources */,
 				02B1A2652CCFBA4900E91477 /* AppReviewView.swift in Sources */,
 				02B1A2782CD3FA7D00E91477 /* ClassName.swift in Sources */,
+				02752BEE2CDE108A00DF2E61 /* LoginViewController.swift in Sources */,
 				02B1A2862CD48EAB00E91477 /* EssentialCollectionViewCell.swift in Sources */,
 				02B1A26D2CD3D48E00E91477 /* CompositionalLayout.swift in Sources */,
 				02B1A2692CCFEACE00E91477 /* AppReviewWriteView.swift in Sources */,
@@ -417,12 +581,15 @@
 				02B1A27E2CD47ED400E91477 /* FreeCollectionViewCell.swift in Sources */,
 				02B1A27C2CD473A600E91477 /* PaidChartCell.swift in Sources */,
 				02B1A23A2CCB673E00E91477 /* versionRecordViewController.swift in Sources */,
+				02752BE62CDDE95400DF2E61 /* Environment.swift in Sources */,
 				02B1A2342CC409D800E91477 /* AppStoreViewController.swift in Sources */,
 				02B1A23E2CCBA27800E91477 /* WriteStarRatingView.swift in Sources */,
+				02752BFB2CDE377E00DF2E61 /* ChangeHobbyViewController.swift in Sources */,
 				02B1A28C2CD4ED7D00E91477 /* ReviewCell.swift in Sources */,
 				02B1A2222CB1149500E91477 /* DetailViewController.swift in Sources */,
 				02B1A2322CBA59D400E91477 /* ColorViewController.swift in Sources */,
 				02B1A27A2CD3FBF100E91477 /* HeaderCell.swift in Sources */,
+				02752BEA2CDDECA700DF2E61 /* SignUpViewController.swift in Sources */,
 				02B1A24C2CCCB81100E91477 /* FreeChartCell.swift in Sources */,
 				02B1A2702CD3DE9400E91477 /* FinanceSection.swift in Sources */,
 				02B1A2282CB4286800E91477 /* UIView+.swift in Sources */,
@@ -430,9 +597,12 @@
 				02B1A2422CCBB68A00E91477 /* setImageTintColor.swift in Sources */,
 				02B1A26B2CD3D22700E91477 /* FinanceCateViewController.swift in Sources */,
 				02B1A24F2CCCC5FD00E91477 /* PhotoViewController.swift in Sources */,
+				02752BF42CDE1EF100DF2E61 /* UITextField+.swift in Sources */,
+				02752BE42CDDE8FA00DF2E61 /* UserService.swift in Sources */,
 				02B1A2462CCCB4D300E91477 /* ChartViewController.swift in Sources */,
 				02B1A2582CCE3A0100E91477 /* AppDetailHeaderView.swift in Sources */,
 				02B1A2802CD4842800E91477 /* FinanceChartCell.swift in Sources */,
+				02752C062CE841AF00DF2E61 /* HobbyView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -460,6 +630,7 @@
 /* Begin XCBuildConfiguration section */
 		02B1A21C2CB1019600E91477 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 02752BDD2CDDA6F500DF2E61 /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -523,6 +694,7 @@
 		};
 		02B1A21D2CB1019600E91477 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 02752BDD2CDDA6F500DF2E61 /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -579,12 +751,14 @@
 		};
 		02B1A21F2CB1019600E91477 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BCA52FF50C7E93CDACF8D406 /* Pods-SOPT-35-Seminar.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = DRD9SK8539;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "SOPT-35-Seminar/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -607,12 +781,14 @@
 		};
 		02B1A2202CB1019600E91477 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 74234D363786865F6B5DF8A5 /* Pods-SOPT-35-Seminar.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = DRD9SK8539;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "SOPT-35-Seminar/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

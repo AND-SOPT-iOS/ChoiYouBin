@@ -63,6 +63,7 @@ struct ChartCell: View {
             {
                 Text(app.downloadState.title)
                     .font(.system(size: 16))
+                    .fontWeight(.bold)
                     .foregroundStyle(.blue)
                     .padding(.vertical, 5)
                     .padding(.horizontal, 12)
@@ -72,6 +73,7 @@ struct ChartCell: View {
             else {
                 Text(app.downloadState.title)
                     .font(.system(size: 16))
+                    .fontWeight(.bold)
                     .foregroundStyle(.blue)
                     .padding(.vertical, 5)
                     .padding(.horizontal, 20)
@@ -80,8 +82,4 @@ struct ChartCell: View {
             }
         }
     }
-}
-
-#Preview {
-    FinanaceChartView()
 }

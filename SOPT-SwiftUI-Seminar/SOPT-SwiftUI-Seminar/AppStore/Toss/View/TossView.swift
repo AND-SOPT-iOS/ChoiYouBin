@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct TossView: View {
+    @EnvironmentObject var viewModel: TossViewModel
+    
     var body: some View {
         ScrollView (showsIndicators: false) {
             VStack {
@@ -52,9 +54,4 @@ struct TossView: View {
             }
         }
     }
-}
-
-
-#Preview {
-    TossView()
 }

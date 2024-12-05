@@ -8,10 +8,11 @@
 import SwiftUI
 
 struct AppDetailHeaderView: View {
+    @EnvironmentObject var viewModel: TossViewModel
     
     var body: some View {
         HStack {
-            Image(.tossIcon)
+            viewModel.appDetail.iconImage
                 .resizable()
                 .frame(width: 80, height: 80)
                 .overlay {
@@ -22,10 +23,10 @@ struct AppDetailHeaderView: View {
                 }
             
             VStack(alignment: .leading){
-                Text("토스")
+                Text(viewModel.appDetail.appTitle)
                     .font(.system(size: 18, weight: .bold))
                 
-                Text("금융이 쉬워진다")
+                Text(viewModel.appDetail.appSubTitle)
                     .font(.system(size: 12, weight: .regular))
                     .foregroundColor(Color(UIColor.gray))
                 

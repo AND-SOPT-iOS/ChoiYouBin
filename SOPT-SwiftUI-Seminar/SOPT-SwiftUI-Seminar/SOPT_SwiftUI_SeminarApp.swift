@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct SOPT_SwiftUI_SeminarApp: App {
+    @StateObject private var tossViewModel = TossViewModel()
+        
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            TossView()
+                .environmentObject(tossViewModel)
         }
     }
 }

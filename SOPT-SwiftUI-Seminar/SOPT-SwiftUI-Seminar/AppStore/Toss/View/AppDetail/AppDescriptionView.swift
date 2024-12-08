@@ -8,19 +8,21 @@
 import SwiftUI
 
 struct AppDescriptionView: View {
+    @EnvironmentObject var viewModel: TossViewModel
+    
     var body: some View {
         HStack {
             
             Spacer()
             
             VStack {
-                Text("8.4만개의 평가")
+                Text("\(viewModel.appDetail.ratingCount)만개의 평가")
                     .font(.system(size: 10))
                     .foregroundColor(Color(.systemGray2))
                 
                 Spacer()
                 
-                Text("4.4")
+                Text(viewModel.appDetail.rating)
                     .font(.system(size: 16, weight: .bold))
                     .foregroundColor(.gray)
                 
@@ -88,8 +90,4 @@ struct AppDescriptionView: View {
         .padding(.horizontal, 16)
         .frame(height: 60)
     }
-}
-
-#Preview {
-    AppDescriptionView()
 }

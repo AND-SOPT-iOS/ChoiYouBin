@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct AppNewsView: View {
+    @EnvironmentObject var viewModel: TossViewModel
+    
     var body: some View {
         VStack(spacing: 10) {
             Button {
@@ -28,7 +30,7 @@ struct AppNewsView: View {
             }
             
             HStack {
-                Text("버전 5.191.0")
+                Text(viewModel.appDetail.version)
                     .font(.system(size: 12))
                     .foregroundColor(.gray)
                 
@@ -40,7 +42,7 @@ struct AppNewsView: View {
             }
             
             HStack {
-                Text("• 구석구석 숨어있던 버그들을 잡았어요.")
+                Text(viewModel.appDetail.updateNotes)
                     .font(.system(size: 12))
                 
                 Spacer()
@@ -48,8 +50,4 @@ struct AppNewsView: View {
         }
         .padding(.horizontal, 16)
     }
-}
-
-#Preview {
-    AppNewsView()
 }

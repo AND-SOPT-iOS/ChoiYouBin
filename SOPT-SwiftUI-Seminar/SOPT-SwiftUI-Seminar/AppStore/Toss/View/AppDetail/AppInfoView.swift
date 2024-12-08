@@ -44,7 +44,3 @@ struct AppInfoView: View {
         .padding(.horizontal, 16)
     }
 }
-
-#Preview {
-    AppInfoView()
-}

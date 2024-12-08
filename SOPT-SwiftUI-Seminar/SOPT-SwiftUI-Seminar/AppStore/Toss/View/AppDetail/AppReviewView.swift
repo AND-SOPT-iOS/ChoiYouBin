@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct AppReviewView: View {
+    @EnvironmentObject var viewModel: TossViewModel
+    
     var body: some View {
         VStack (spacing: 12){
             Button {
@@ -34,11 +36,11 @@ struct AppReviewView: View {
                 Spacer()
                 
                 VStack (alignment: .trailing){
-                    Text("★★★★★")
+                    Text(viewModel.appDetail.rating)
                         .font(.system(size: 16, weight: .bold))
                         .foregroundColor(.black)
                     
-                    Text("8.4만개의 평가")
+                    Text("\(viewModel.appDetail.ratingCount)만개의 평가")
                         .font(.system(size: 16, weight: .regular))
                         .foregroundColor(Color(UIColor.darkGray))
                 }
@@ -46,8 +48,4 @@ struct AppReviewView: View {
         }
         .padding(.horizontal, 16)
     }
-}
-
-#Preview {
-    AppReviewView()
 }

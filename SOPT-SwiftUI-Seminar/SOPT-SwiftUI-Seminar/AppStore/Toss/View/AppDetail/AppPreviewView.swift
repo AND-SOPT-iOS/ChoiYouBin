@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct AppPreviewView: View {
+    @EnvironmentObject var viewModel: TossViewModel
+    
     var body: some View {
         VStack {
             
@@ -19,15 +21,11 @@ struct AppPreviewView: View {
                 Spacer()
             }
             
-            Image(.appPreview1)
+            viewModel.appDetail.previewImage
                 .resizable()
                 .frame(height: 450)
             
         }
         .padding(.horizontal, 16)
     }
-}
-
-#Preview {
-    AppPreviewView()
 }

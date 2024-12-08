@@ -59,7 +59,3 @@ struct AppReviewWriteView: View {
         .padding(.horizontal, 16)
     }
 }
-
-#Preview {
-    AppReviewWriteView()
-}

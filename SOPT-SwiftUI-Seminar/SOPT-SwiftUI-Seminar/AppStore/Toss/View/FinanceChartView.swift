@@ -8,14 +8,14 @@
 import SwiftUI
 
 struct FinanceChartView: View {
-    private let appList = Application.sampleApps
+    @StateObject private var viewModel = ChartViewModel()
 
     var body: some View {
         NavigationView {
             VStack {
-                List(appList) { app in
+                List(0..<viewModel.sampleApps.count, id: \.self) { index in
                     NavigationLink(destination: TossView()) {
-                        ChartCell(app: app)
+                        ChartCell(viewModel: viewModel, index: index)
                     }
                 }
             }

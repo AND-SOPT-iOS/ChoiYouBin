@@ -8,8 +8,12 @@
 import SwiftUI
 
 struct ChartCell: View {
-
-    let app: Application
+    @ObservedObject var viewModel: ChartViewModel
+    let index: Int
+    
+    private var app: Application {
+        viewModel.getApp(at: index)
+    }
 
     var body: some View {
         HStack(

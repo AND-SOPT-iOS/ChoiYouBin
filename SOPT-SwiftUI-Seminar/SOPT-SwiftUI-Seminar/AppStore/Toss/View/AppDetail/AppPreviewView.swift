@@ -20,10 +20,17 @@ struct AppPreviewView: View {
                 
                 Spacer()
             }
-            
-            viewModel.appDetail.previewImage
-                .resizable()
-                .frame(height: 450)
+
+            ScrollView(.horizontal, showsIndicators: false) {
+                LazyHGrid(rows: [GridItem(.flexible())], spacing: 0) {
+                    ForEach(0..<4, id: \.self) { index in
+                        viewModel.appDetail.previewImage
+                            .resizable()
+                            .frame(width: UIScreen.main.bounds.width - 32 ,height: 450)
+                    }
+                }
+            }
+            .scrollTargetBehavior(.paging)
             
         }
         .padding(.horizontal, 16)

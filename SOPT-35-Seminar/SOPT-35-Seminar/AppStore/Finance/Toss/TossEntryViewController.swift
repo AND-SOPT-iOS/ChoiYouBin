@@ -8,6 +8,7 @@
 import UIKit
 import Then
 import SnapKit
+import SwiftUI
 
 class TossEntryViewController: UIViewController {
 
@@ -15,6 +16,13 @@ class TossEntryViewController: UIViewController {
         $0.setTitle("금융 정보 보기", for: .normal)
         $0.setTitleColor(.white, for: .normal)
         $0.addTarget(self, action: #selector(tossEntryTap), for: .touchUpInside)
+        $0.backgroundColor = .tintColor
+    }
+    
+    private lazy var swiftUIEntryButton = UIButton().then {
+        $0.setTitle("SwiftUI", for: .normal)
+        $0.setTitleColor(.white, for: .normal)
+        $0.addTarget(self, action: #selector(chartEntryTap), for: .touchUpInside)
         $0.backgroundColor = .tintColor
     }
     
@@ -32,12 +40,19 @@ class TossEntryViewController: UIViewController {
     }
     
     func setUI() {
-        self.view.addSubview(entryButton)
+        self.view.addSubviews(entryButton, swiftUIEntryButton)
     }
     
     func setLayout() {
         entryButton.snp.makeConstraints {
             $0.center.equalToSuperview()
+            $0.width.equalTo(200)
+            $0.height.equalTo(50)
+        }
+        
+        swiftUIEntryButton.snp.makeConstraints {
+            $0.centerX.equalToSuperview()
+            $0.top.equalTo(entryButton.snp.bottom).offset(50)
             $0.width.equalTo(200)
             $0.height.equalTo(50)
         }
@@ -51,6 +66,13 @@ class TossEntryViewController: UIViewController {
         let nextViewController = FinanceCateViewController()
         
         self.navigationController?.pushViewController(nextViewController, animated: true)
+    }
+    
+    @objc func chartEntryTap() {
+        let financeChartView = FinanceChartView()
+        let hostingController = UIHostingController(rootView: financeChartView)
+        
+        navigationController?.pushViewController(hostingController, animated: true)
     }
     
 }

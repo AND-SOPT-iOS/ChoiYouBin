@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		02615AA82CF9A1C4008E9B3C /* ChartCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02615AA72CF9A1C0008E9B3C /* ChartCell.swift */; };
+		02615AAA2CF9ACDC008E9B3C /* AppStoreApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02615AA92CF9ACD1008E9B3C /* AppStoreApplication.swift */; };
+		02615AAC2CF9B114008E9B3C /* FinanceChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02615AAB2CF9B10B008E9B3C /* FinanceChartView.swift */; };
+		02615AAE2CF9CAE5008E9B3C /* TossView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02615AAD2CF9CAE2008E9B3C /* TossView.swift */; };
 		02752BE22CDDE67A00DF2E61 /* UserDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02752BE12CDDE67A00DF2E61 /* UserDTO.swift */; };
 		02752BE42CDDE8FA00DF2E61 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02752BE32CDDE8FA00DF2E61 /* UserService.swift */; };
 		02752BE62CDDE95400DF2E61 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02752BE52CDDE95400DF2E61 /* Environment.swift */; };
@@ -76,10 +80,14 @@
 		02B1A28A2CD4D61700E91477 /* PreviewImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B1A2892CD4D61700E91477 /* PreviewImageCell.swift */; };
 		02B1A28C2CD4ED7D00E91477 /* ReviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B1A28B2CD4ED7D00E91477 /* ReviewCell.swift */; };
 		02B1A28E2CD4EDCB00E91477 /* ReviewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B1A28D2CD4EDCB00E91477 /* ReviewModel.swift */; };
-		173813DA2ED2E793A18AB152 /* Pods_SOPT_35_Seminar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64A0D298AFC0A26F88139A77 /* Pods_SOPT_35_Seminar.framework */; };
+		E4FE8C6B31ED9B782C892301 /* Pods_SOPT_35_Seminar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9DF5B918DDA9CA0A4208CA6 /* Pods_SOPT_35_Seminar.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		02615AA72CF9A1C0008E9B3C /* ChartCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartCell.swift; sourceTree = "<group>"; };
+		02615AA92CF9ACD1008E9B3C /* AppStoreApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStoreApplication.swift; sourceTree = "<group>"; };
+		02615AAB2CF9B10B008E9B3C /* FinanceChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinanceChartView.swift; sourceTree = "<group>"; };
+		02615AAD2CF9CAE2008E9B3C /* TossView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TossView.swift; sourceTree = "<group>"; };
 		02752BDD2CDDA6F500DF2E61 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 		02752BE12CDDE67A00DF2E61 /* UserDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDTO.swift; sourceTree = "<group>"; };
 		02752BE32CDDE8FA00DF2E61 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
@@ -150,9 +158,9 @@
 		02B1A2892CD4D61700E91477 /* PreviewImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewImageCell.swift; sourceTree = "<group>"; };
 		02B1A28B2CD4ED7D00E91477 /* ReviewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewCell.swift; sourceTree = "<group>"; };
 		02B1A28D2CD4EDCB00E91477 /* ReviewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewModel.swift; sourceTree = "<group>"; };
-		64A0D298AFC0A26F88139A77 /* Pods_SOPT_35_Seminar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SOPT_35_Seminar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		74234D363786865F6B5DF8A5 /* Pods-SOPT-35-Seminar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SOPT-35-Seminar.release.xcconfig"; path = "Target Support Files/Pods-SOPT-35-Seminar/Pods-SOPT-35-Seminar.release.xcconfig"; sourceTree = "<group>"; };
-		BCA52FF50C7E93CDACF8D406 /* Pods-SOPT-35-Seminar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SOPT-35-Seminar.debug.xcconfig"; path = "Target Support Files/Pods-SOPT-35-Seminar/Pods-SOPT-35-Seminar.debug.xcconfig"; sourceTree = "<group>"; };
+		25E5A2FB6D901A0D4BED2B67 /* Pods-SOPT-35-Seminar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SOPT-35-Seminar.release.xcconfig"; path = "Target Support Files/Pods-SOPT-35-Seminar/Pods-SOPT-35-Seminar.release.xcconfig"; sourceTree = "<group>"; };
+		C4F88CBD19E809F8B0CB75F8 /* Pods-SOPT-35-Seminar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SOPT-35-Seminar.debug.xcconfig"; path = "Target Support Files/Pods-SOPT-35-Seminar/Pods-SOPT-35-Seminar.debug.xcconfig"; sourceTree = "<group>"; };
+		F9DF5B918DDA9CA0A4208CA6 /* Pods_SOPT_35_Seminar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SOPT_35_Seminar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,13 +170,24 @@
 			files = (
 				02B1A22D2CBA4A8A00E91477 /* SnapKit in Frameworks */,
 				02B1A2302CBA4AD300E91477 /* Then in Frameworks */,
-				173813DA2ED2E793A18AB152 /* Pods_SOPT_35_Seminar.framework in Frameworks */,
+				E4FE8C6B31ED9B782C892301 /* Pods_SOPT_35_Seminar.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		02615AA62CF9A10D008E9B3C /* SwifUI */ = {
+			isa = PBXGroup;
+			children = (
+				02615AAD2CF9CAE2008E9B3C /* TossView.swift */,
+				02615AAB2CF9B10B008E9B3C /* FinanceChartView.swift */,
+				02615AA92CF9ACD1008E9B3C /* AppStoreApplication.swift */,
+				02615AA72CF9A1C0008E9B3C /* ChartCell.swift */,
+			);
+			path = SwifUI;
+			sourceTree = "<group>";
+		};
 		02752BDE2CDDE64F00DF2E61 /* Network */ = {
 			isa = PBXGroup;
 			children = (
@@ -220,7 +239,7 @@
 				02B1A20C2CB1019200E91477 /* SOPT-35-Seminar */,
 				02B1A20B2CB1019200E91477 /* Products */,
 				EF605D570752085E28B567C3 /* Pods */,
-				ECCFE00C0FC1F3EECFF629C4 /* Frameworks */,
+				5664FEAB13DC8E5924919128 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -307,6 +326,7 @@
 		02B1A28F2CD5101600E91477 /* Finance */ = {
 			isa = PBXGroup;
 			children = (
+				02615AA62CF9A10D008E9B3C /* SwifUI */,
 				02B1A2962CD510B700E91477 /* Toss */,
 				02B1A26C2CD3D48E00E91477 /* CompositionalLayout.swift */,
 				02B1A2472CCCB59B00E91477 /* App.swift */,
@@ -399,10 +419,10 @@
 			path = Component;
 			sourceTree = "<group>";
 		};
-		ECCFE00C0FC1F3EECFF629C4 /* Frameworks */ = {
+		5664FEAB13DC8E5924919128 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				64A0D298AFC0A26F88139A77 /* Pods_SOPT_35_Seminar.framework */,
+				F9DF5B918DDA9CA0A4208CA6 /* Pods_SOPT_35_Seminar.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -410,8 +430,8 @@
 		EF605D570752085E28B567C3 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				BCA52FF50C7E93CDACF8D406 /* Pods-SOPT-35-Seminar.debug.xcconfig */,
-				74234D363786865F6B5DF8A5 /* Pods-SOPT-35-Seminar.release.xcconfig */,
+				C4F88CBD19E809F8B0CB75F8 /* Pods-SOPT-35-Seminar.debug.xcconfig */,
+				25E5A2FB6D901A0D4BED2B67 /* Pods-SOPT-35-Seminar.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -423,11 +443,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 02B1A21E2CB1019600E91477 /* Build configuration list for PBXNativeTarget "SOPT-35-Seminar" */;
 			buildPhases = (
-				BDAA28CD19669A160864BA58 /* [CP] Check Pods Manifest.lock */,
+				E6A3990CDEAF8BD305221848 /* [CP] Check Pods Manifest.lock */,
 				02B1A2062CB1019200E91477 /* Sources */,
 				02B1A2072CB1019200E91477 /* Frameworks */,
 				02B1A2082CB1019200E91477 /* Resources */,
-				DBBD7D898D726D6F7949E9F9 /* [CP] Embed Pods Frameworks */,
+				E660802CB1FFAF1D59DF8BEA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -494,7 +514,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		BDAA28CD19669A160864BA58 /* [CP] Check Pods Manifest.lock */ = {
+		E660802CB1FFAF1D59DF8BEA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SOPT-35-Seminar/Pods-SOPT-35-Seminar-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SOPT-35-Seminar/Pods-SOPT-35-Seminar-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SOPT-35-Seminar/Pods-SOPT-35-Seminar-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E6A3990CDEAF8BD305221848 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -514,23 +551,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		DBBD7D898D726D6F7949E9F9 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SOPT-35-Seminar/Pods-SOPT-35-Seminar-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SOPT-35-Seminar/Pods-SOPT-35-Seminar-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SOPT-35-Seminar/Pods-SOPT-35-Seminar-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -568,10 +588,12 @@
 				02752BF92CDE317200DF2E61 /* HobbyDTO.swift in Sources */,
 				02B1A2482CCCB59B00E91477 /* App.swift in Sources */,
 				02752BE82CDDE98600DF2E61 /* NetworkError.swift in Sources */,
+				02615AA82CF9A1C4008E9B3C /* ChartCell.swift in Sources */,
 				02B1A25C2CCE479B00E91477 /* UIStackView+.swift in Sources */,
 				02B1A2542CCCC83300E91477 /* PhotoCell.swift in Sources */,
 				02B1A2652CCFBA4900E91477 /* AppReviewView.swift in Sources */,
 				02B1A2782CD3FA7D00E91477 /* ClassName.swift in Sources */,
+				02615AAE2CF9CAE5008E9B3C /* TossView.swift in Sources */,
 				02752BEE2CDE108A00DF2E61 /* LoginViewController.swift in Sources */,
 				02B1A2862CD48EAB00E91477 /* EssentialCollectionViewCell.swift in Sources */,
 				02B1A26D2CD3D48E00E91477 /* CompositionalLayout.swift in Sources */,
@@ -593,9 +615,11 @@
 				02B1A24C2CCCB81100E91477 /* FreeChartCell.swift in Sources */,
 				02B1A2702CD3DE9400E91477 /* FinanceSection.swift in Sources */,
 				02B1A2282CB4286800E91477 /* UIView+.swift in Sources */,
+				02615AAA2CF9ACDC008E9B3C /* AppStoreApplication.swift in Sources */,
 				02B1A24A2CCCB64300E91477 /* DownloadState.swift in Sources */,
 				02B1A2422CCBB68A00E91477 /* setImageTintColor.swift in Sources */,
 				02B1A26B2CD3D22700E91477 /* FinanceCateViewController.swift in Sources */,
+				02615AAC2CF9B114008E9B3C /* FinanceChartView.swift in Sources */,
 				02B1A24F2CCCC5FD00E91477 /* PhotoViewController.swift in Sources */,
 				02752BF42CDE1EF100DF2E61 /* UITextField+.swift in Sources */,
 				02752BE42CDDE8FA00DF2E61 /* UserService.swift in Sources */,
@@ -630,7 +654,7 @@
 /* Begin XCBuildConfiguration section */
 		02B1A21C2CB1019600E91477 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 02752BDD2CDDA6F500DF2E61 /* Config.xcconfig */;
+			baseConfigurationReference = 25E5A2FB6D901A0D4BED2B67 /* Pods-SOPT-35-Seminar.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -751,7 +775,7 @@
 		};
 		02B1A21F2CB1019600E91477 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BCA52FF50C7E93CDACF8D406 /* Pods-SOPT-35-Seminar.debug.xcconfig */;
+			baseConfigurationReference = 02752BDD2CDDA6F500DF2E61 /* Config.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -781,7 +805,7 @@
 		};
 		02B1A2202CB1019600E91477 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 74234D363786865F6B5DF8A5 /* Pods-SOPT-35-Seminar.release.xcconfig */;
+			baseConfigurationReference = 25E5A2FB6D901A0D4BED2B67 /* Pods-SOPT-35-Seminar.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

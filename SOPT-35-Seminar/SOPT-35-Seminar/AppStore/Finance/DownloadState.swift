@@ -12,4 +12,18 @@ enum DownloadState {
     case download
     case redownload
     case update
+    
+    var title: String {
+        switch self {
+        case .installed:
+            return "열기"
+        case .download:
+            return "받기"
+        case .redownload:
+            return "재 다운"
+        case .update:
+            return "업데이트"
+        }
+    }
+
 }

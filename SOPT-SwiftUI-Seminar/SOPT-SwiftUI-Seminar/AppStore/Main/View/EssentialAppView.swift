@@ -50,9 +50,10 @@ struct EssentialAppView: View {
     var scrollView: some View {
         ScrollView(.horizontal, showsIndicators: false) {
             LazyHGrid(rows: [GridItem(.flexible())], spacing: 0) {
-                ForEach(0..<3, id: \.self) { index in
+                ForEach(0..<3, id: \.self) { pageIndex in
                     VStack {
-                        List(0..<3, id: \.self) { index in
+                        List(0..<3, id: \.self) { itemIndex in
+                            let index = pageIndex * 3 + itemIndex
                             ZStack {
                                 EssentialAppCell(chartViewModel: chartViewModel, index: index)
                                 

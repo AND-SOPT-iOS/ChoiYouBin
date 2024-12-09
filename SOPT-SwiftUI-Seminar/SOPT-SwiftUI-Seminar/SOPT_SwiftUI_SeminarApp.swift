@@ -13,7 +13,7 @@ struct SOPT_SwiftUI_SeminarApp: App {
         
     var body: some Scene {
         WindowGroup {
-            FinanceChartView()
+            ContentView()
                 .environmentObject(tossViewModel)
         }
     }

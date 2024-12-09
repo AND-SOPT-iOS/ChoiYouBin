@@ -9,13 +9,20 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        NavigationStack {
+            VStack {
+                NavigationLink(destination: AppStoreMainView()
+                    .navigationTitle("금융")
+                    .navigationBarTitleDisplayMode(.inline)
+                ) {
+                    Text("금융 카테고리 이동")
+                        .font(.system(size: 40, weight: .bold))
+                        .foregroundStyle(Color.blue)
+                }
+            }
+            .padding()
+            .navigationTitle("앱")
         }
-        .padding()
     }
 }
 

@@ -13,9 +13,9 @@ struct MainRankingView: View {
     
     var body: some View {
         VStack (spacing: 0){
-            Button {
-                
-            } label: {
+            NavigationLink(destination: FinanceChartView()
+                .navigationTitle("인기 차트")
+            ) {
                 HStack {
                     if paid == "유료" {
                         Text("유료 순위")

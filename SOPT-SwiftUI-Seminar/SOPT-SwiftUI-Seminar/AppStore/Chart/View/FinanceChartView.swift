@@ -24,15 +24,7 @@ struct FinanceChartView: View {
                     }
                 }
             }
-            .listStyle(.plain)
-            .navigationBarTitleDisplayMode(.inline)
-            .toolbar {
-                ToolbarItem(placement: .principal) {
-                    Text("인기 차트")
-                        .font(.system(size: 16, weight: .bold))
-                }
-            }
-        }
+            .listStyle(.plain)        }
     }
 }
 

@@ -15,7 +15,7 @@ struct FinanceChartView: View {
             VStack {
                 List(0..<chartViewModel.sampleApps.count, id: \.self) { index in
                     ZStack {
-                        ChartCell(chartViewModel: chartViewModel, index: index)
+                        ChartCell(chartViewModel: chartViewModel, index: index, category: "finance")
                                 
                         NavigationLink(destination: TossView()) {
                             EmptyView()

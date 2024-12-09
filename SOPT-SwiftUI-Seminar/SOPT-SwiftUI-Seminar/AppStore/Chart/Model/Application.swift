@@ -18,6 +18,174 @@ struct Application: Identifiable {
 }
 
 extension Application {
+    static let paidApps: [Application] = [
+        Application(
+            id: UUID(),
+            iconImage: Image(.icon9),
+            ranking: 1,
+            title: "Twitter",
+            subtitle: "실시간 뉴스와 대화",
+            category: "소셜 네트워킹",
+            downloadState: .redownload
+        ),
+        Application(
+            id: UUID(),
+            iconImage: Image(.icon10),
+            ranking: 2,
+            title: "Spotify",
+            subtitle: "음악 스트리밍 서비스",
+            category: "음악",
+            downloadState: .paid
+        ),
+        Application(
+            id: UUID(),
+            iconImage: Image(.icon11),
+            ranking: 3,
+            title: "쿠팡",
+            subtitle: "로켓배송",
+            category: "쇼핑",
+            downloadState: .update
+        ),
+        Application(
+            id: UUID(),
+            iconImage: Image(.icon12),
+            ranking: 4,
+            title: "네이버",
+            subtitle: "검색과 뉴스",
+            category: "유틸리티",
+            downloadState: .paid
+        ),
+        Application(
+            id: UUID(),
+            iconImage: Image(.icon7),
+            ranking: 5,
+            title: "카카오톡",
+            subtitle: "무료 메시징과 통화",
+            category: "소셜 네트워킹",
+            downloadState: .update
+        ),
+        Application(
+            id: UUID(),
+            iconImage: Image(.icon13),
+            ranking: 6,
+            title: "배달의민족",
+            subtitle: "음식 배달 서비스",
+            category: "푸드",
+            downloadState: .paid
+        ),
+        Application(
+            id: UUID(),
+            iconImage: Image(.icon14),
+            ranking: 7,
+            title: "Discord",
+            subtitle: "게이머를 위한 채팅",
+            category: "소셜 네트워킹",
+            downloadState: .download
+        ),
+        Application(
+            id: UUID(),
+            iconImage: Image(.icon15),
+            ranking: 8,
+            title: "Google",
+            subtitle: "검색과 클라우드 서비스",
+            category: "유틸리티",
+            downloadState: .paid
+        ),
+        Application(
+            id: UUID(),
+            iconImage: Image(.icon16),
+            ranking: 9,
+            title: "Facebook",
+            subtitle: "친구와 소통하기",
+            category: "소셜 네트워킹",
+            downloadState: .paid
+        )
+    ]
+    
+    static let freeApps: [Application] = [
+        Application(
+            id: UUID(),
+            iconImage: Image(.icon13),
+            ranking: 1,
+            title: "배달의민족",
+            subtitle: "음식 배달 서비스",
+            category: "푸드",
+            downloadState: .installed
+        ),
+        Application(
+            id: UUID(),
+            iconImage: Image(.icon14),
+            ranking: 2,
+            title: "Discord",
+            subtitle: "게이머를 위한 채팅",
+            category: "소셜 네트워킹",
+            downloadState: .download
+        ),
+        Application(
+            id: UUID(),
+            iconImage: Image(.icon15),
+            ranking: 3,
+            title: "Google",
+            subtitle: "검색과 클라우드 서비스",
+            category: "유틸리티",
+            downloadState: .update
+        ),
+        Application(
+            id: UUID(),
+            iconImage: Image(.icon16),
+            ranking: 4,
+            title: "Facebook",
+            subtitle: "친구와 소통하기",
+            category: "소셜 네트워킹",
+            downloadState: .redownload
+        ),
+        Application(
+            id: UUID(),
+            iconImage: Image(.icon17),
+            ranking: 5,
+            title: "LINE",
+            subtitle: "무료 메시지와 통화",
+            category: "소셜 네트워킹",
+            downloadState: .installed
+        ),
+        Application(
+            id: UUID(),
+            iconImage: Image(.icon18),
+            ranking: 6,
+            title: "Outlook",
+            subtitle: "이메일과 캘린더",
+            category: "생산성",
+            downloadState: .download
+        ),
+        Application(
+            id: UUID(),
+            iconImage: Image(.icon19),
+            ranking: 7,
+            title: "Outlook",
+            subtitle: "이메일과 캘린더",
+            category: "생산성",
+            downloadState: .download
+        ),
+        Application(
+            id: UUID(),
+            iconImage: Image(.icon20),
+            ranking: 8,
+            title: "Outlook",
+            subtitle: "이메일과 캘린더",
+            category: "생산성",
+            downloadState: .download
+        ),
+        Application(
+            id: UUID(),
+            iconImage: Image(.icon21),
+            ranking: 9,
+            title: "Outlook",
+            subtitle: "이메일과 캘린더",
+            category: "생산성",
+            downloadState: .download
+        ),
+    ]
+    
     static let sampleApps: [Application] = [
         Application(
             id: UUID(),

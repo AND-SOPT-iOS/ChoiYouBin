@@ -16,10 +16,10 @@ struct AppStoreMainView: View {
                 EssentialAppView()
                     .frame(height: 260)
                 
-                MainRankingView(paid: "유료")
+                MainRankingView(paid: "paid")
                     .frame(height: 250)
                 
-                MainRankingView(paid: "무료")
+                MainRankingView(paid: "free")
                     .frame(height: 250)
 
                 ZStack {

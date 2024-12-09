@@ -55,7 +55,7 @@ struct EssentialAppView: View {
                         List(0..<3, id: \.self) { itemIndex in
                             let index = pageIndex * 3 + itemIndex
                             ZStack {
-                                EssentialAppCell(chartViewModel: chartViewModel, index: index)
+                                ChartCell(chartViewModel: chartViewModel, index: index, category: "essential")
                                 
                                 NavigationLink(destination: TossView()) {
                                     EmptyView()

@@ -18,7 +18,7 @@ struct MainRankingView: View {
                     .navigationTitle("인기 차트")
                 ) {
                     HStack {
-                        if paid == "유료" {
+                        if paid == "paid" {
                             Text("유료 순위")
                                 .font(.system(size: 20, weight: .bold))
                                 .foregroundStyle(Color.black)
@@ -54,7 +54,7 @@ struct MainRankingView: View {
                         List(0..<3, id: \.self) { itemIndex in
                             let index = pageIndex * 3 + itemIndex
                             ZStack {
-                                ChartCell(chartViewModel: chartViewModel, index: index)
+                                ChartCell(chartViewModel: chartViewModel, index: index, category: paid)
                                 
                                 NavigationLink(destination: TossView()) {
                                     EmptyView()

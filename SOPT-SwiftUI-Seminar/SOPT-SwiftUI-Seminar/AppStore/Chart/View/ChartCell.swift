@@ -10,9 +10,18 @@ import SwiftUI
 struct ChartCell: View {
     @ObservedObject var chartViewModel: ChartViewModel
     let index: Int
+    let category: String
     
     private var app: Application {
-        chartViewModel.getApp(at: index)
+        if category == "free" {
+            chartViewModel.getFreeApp(at: index)
+        }
+        else if category == "paid"{
+            chartViewModel.getPaidApp(at: index)
+        }
+        else {
+            chartViewModel.getApp(at: index)
+        }
     }
 
     var body: some View {
@@ -27,12 +36,14 @@ struct ChartCell: View {
                         .frame(width: 55, height: 55)
                 }
             
-            VStack(spacing: 3) {
-                Text(app.ranking.description)
-                    .font(.system(size: 16, weight: .bold))
-                
-                Text("")
-                    .font(.system(size: 12))
+            if category == "essential" {
+                VStack(spacing: 3) {
+                    Text(app.ranking.description)
+                        .font(.system(size: 16, weight: .bold))
+                    
+                    Text("")
+                        .font(.system(size: 12))
+                }
             }
             
             VStack(alignment: .leading, spacing: 3) {
@@ -48,8 +59,8 @@ struct ChartCell: View {
             Button {
 
             } label: {
-                if app.downloadState.title == "업데이트"
-                    || app.downloadState.title == "재 다운"
+                if app.downloadState == .update
+                    || app.downloadState == .paid
                 {
                     Text(app.downloadState.title)
                         .font(.system(size: 16))
@@ -59,6 +70,13 @@ struct ChartCell: View {
                         .padding(.horizontal, 12)
                         .background(Color(UIColor.systemGray6))
                         .clipShape(Capsule())
+                }
+                else if app.downloadState == .redownload {
+                    Image(systemName: "icloud.and.arrow.down")
+                        .resizable()
+                        .frame(width: 24, height: 24)
+                        .foregroundStyle(Color.blue)
+                        .padding(.horizontal, 20)
                 }
                 else {
                     Text(app.downloadState.title)

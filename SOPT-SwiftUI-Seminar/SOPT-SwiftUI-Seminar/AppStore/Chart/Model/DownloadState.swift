@@ -12,6 +12,7 @@ enum DownloadState {
     case download
     case redownload
     case update
+    case paid
 
     var title: String {
         switch self {
@@ -23,6 +24,8 @@ enum DownloadState {
             return "재 다운"
         case .update:
             return "업데이트"
+        case .paid:
+            return "₩6,000"
         }
     }
 }

@@ -36,7 +36,7 @@ struct ChartCell: View {
                         .frame(width: 55, height: 55)
                 }
             
-            if category == "essential" || category == "finance" {
+            if category != "essential" {
                 VStack(spacing: 3) {
                     Text(app.ranking.description)
                         .font(.system(size: 16, weight: .bold))

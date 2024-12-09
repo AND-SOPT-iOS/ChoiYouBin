@@ -39,22 +39,39 @@ struct MainRankingView: View {
             }
             .padding(.leading, 20)
             
-            NavigationView {
-                VStack {
-                    List(0..<3, id: \.self) { index in
-                        ZStack {
-                            ChartCell(chartViewModel: chartViewModel, index: index)
-                            
-                            NavigationLink(destination: TossView()) {
-                                EmptyView()
-                            }
-                            .opacity(0)
-                        }
-                    }
-                }
-                .listStyle(.plain)
-                .scrollDisabled(true)
-            }
+            scrollView
+                .scrollTargetBehavior(.paging)
         }
     }
+    
+    var scrollView: some View {
+        ScrollView(.horizontal, showsIndicators: false) {
+            LazyHGrid(rows: [GridItem(.flexible())], spacing: 0) {
+                ForEach(0..<3, id: \.self) { index in
+                    NavigationView {
+                        VStack {
+                            List(0..<3, id: \.self) { index in
+                                ZStack {
+                                    ChartCell(chartViewModel: chartViewModel, index: index)
+                                    
+                                    NavigationLink(destination: TossView()) {
+                                        EmptyView()
+                                    }
+                                    .opacity(0)
+                                }
+                            }
+                        }
+                        .listStyle(.plain)
+                        .scrollDisabled(true)
+                    }
+                    .frame(width: UIScreen.main.bounds.width)
+                }
+            }
+        }
+        .frame(height: 230)
+    }
+}
+
+#Preview {
+    MainRankingView(paid: "유료")
 }

@@ -40,23 +40,36 @@ struct EssentialAppView: View {
             }
             .padding(.leading, 20)
             
-            NavigationView {
-                VStack {
-                    List(0..<3, id: \.self) { index in
-                        ZStack {
-                            EssentialAppCell(chartViewModel: chartViewModel, index: index)
-                            
-                            NavigationLink(destination: TossView()) {
-                                EmptyView()
+            scrollView
+                .scrollTargetBehavior(.paging)
+        }
+    }
+    
+    var scrollView: some View {
+        ScrollView(.horizontal, showsIndicators: false) {
+            LazyHGrid(rows: [GridItem(.flexible())], spacing: 0) {
+                ForEach(0..<3, id: \.self) { index in
+                    NavigationView {
+                        VStack {
+                            List(0..<3, id: \.self) { index in
+                                ZStack {
+                                    EssentialAppCell(chartViewModel: chartViewModel, index: index)
+                                    
+                                    NavigationLink(destination: TossView()) {
+                                        EmptyView()
+                                    }
+                                    .opacity(0)
+                                }
                             }
-                            .opacity(0)
                         }
+                        .listStyle(.plain)
+                        .scrollDisabled(true)
                     }
+                    .frame(width: UIScreen.main.bounds.width)
                 }
-                .listStyle(.plain)
-                .scrollDisabled(true)
             }
         }
+        .frame(height: 230)
     }
 }
 

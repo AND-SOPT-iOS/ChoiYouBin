@@ -21,10 +21,13 @@ struct AppStoreMainView: View {
                 
                 MainRankingView(paid: "무료")
                     .frame(height: 250)
+
+                ZStack {
+                    
+                }
+                .frame(height: 50)
             }
-            
         }
-        
     }
 }
 

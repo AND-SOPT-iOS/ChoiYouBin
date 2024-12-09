@@ -8,11 +8,11 @@
 import SwiftUI
 
 struct ChartCell: View {
-    @ObservedObject var viewModel: ChartViewModel
+    @ObservedObject var chartViewModel: ChartViewModel
     let index: Int
     
     private var app: Application {
-        viewModel.getApp(at: index)
+        chartViewModel.getApp(at: index)
     }
 
     var body: some View {

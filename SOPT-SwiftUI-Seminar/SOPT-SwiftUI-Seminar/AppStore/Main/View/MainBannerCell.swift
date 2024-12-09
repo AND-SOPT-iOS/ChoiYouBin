@@ -8,40 +8,47 @@
 import SwiftUI
 
 struct MainBannerCell: View {
+    @ObservedObject var bannerViewModel: BannerViewModel
+    let index: Int
+    
+    private var banner: BannerModel {
+        bannerViewModel.getBanner(at: index)
+    }
+    
     var body: some View {
         VStack(alignment: .leading, spacing: 3) {
-            Text("새로운 경험")
+            Text(banner.sort)
                 .font(.system(size: 10))
                 .foregroundStyle(Color(UIColor.tintColor))
             
-            Text("Fortune City - A Finance App")
+            Text(banner.title)
                 .font(.system(size: 18))
                 .foregroundStyle(Color.black)
             
-            Text("게임을 하듯 관리하는 가계부")
+            Text(banner.subTitle)
                 .font(.system(size: 16))
                 .foregroundStyle(Color.gray)
             
             ZStack {
-                Image(.banner1)
+                banner.bannerImage
                     .resizable()
-                    .frame(height: 300)
+                    .frame(height: 250)
                 
                 VStack {
                     Spacer()
                     
                     HStack {
-                        Image(.icon1)
+                        banner.logoImage
                             .resizable()
                             .frame(width: 40, height: 40)
                             .padding(.leading, 10)
                         
                         VStack(alignment: .leading) {
-                            Text("Fortune City - A Finance App")
+                            Text(banner.title)
                                 .font(.system(size: 14, weight: .bold))
                                 .foregroundStyle(Color.white)
                             
-                            Text("좋은 소비습관을 만들어 보세요")
+                            Text(banner.info)
                                 .font(.system(size: 12))
                                 .foregroundStyle(Color(UIColor.systemGray6))
                         }
@@ -62,7 +69,7 @@ struct MainBannerCell: View {
                                     .clipShape(Capsule())
                             }
                             
-                            Text("앱 내 구입")
+                            Text(banner.inApp)
                                 .font(.system(size: 8))
                                 .foregroundStyle(Color(UIColor.systemGray6))
                         }
@@ -74,12 +81,8 @@ struct MainBannerCell: View {
                     
                 }
             }
-            .frame(height: 300)
+            .frame(height: 250)
         }
         .padding(.horizontal, 15)
     }
-}
-
-#Preview {
-    MainBannerCell()
 }

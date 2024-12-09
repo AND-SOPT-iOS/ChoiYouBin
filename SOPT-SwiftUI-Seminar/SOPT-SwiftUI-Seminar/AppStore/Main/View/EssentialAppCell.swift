@@ -1,13 +1,13 @@
 //
-//  ChartCell.swift
+//  EssentialAppCell.swift
 //  SOPT-SwiftUI-Seminar
 //
-//  Created by 최유빈 on 12/8/24.
+//  Created by 최유빈 on 12/9/24.
 //
 
 import SwiftUI
 
-struct ChartCell: View {
+struct EssentialAppCell: View {
     @ObservedObject var chartViewModel: ChartViewModel
     let index: Int
     
@@ -26,14 +26,6 @@ struct ChartCell: View {
                         .stroke(.gray, lineWidth: 0.3)
                         .frame(width: 55, height: 55)
                 }
-            
-            VStack(spacing: 3) {
-                Text(app.ranking.description)
-                    .font(.system(size: 16, weight: .bold))
-                
-                Text("")
-                    .font(.system(size: 12))
-            }
             
             VStack(alignment: .leading, spacing: 3) {
                 Text(app.title)

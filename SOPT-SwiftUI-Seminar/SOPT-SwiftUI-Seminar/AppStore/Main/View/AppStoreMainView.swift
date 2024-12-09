@@ -9,7 +9,20 @@ import SwiftUI
 
 struct AppStoreMainView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ScrollView {
+            VStack (spacing: 20){
+                MainBannerView()
+                
+                EssentialAppView()
+                    .frame(height: 260)
+                
+                MainRankingView(paid: "유료")
+                    .frame(height: 250)
+                
+                MainRankingView(paid: "무료")
+                    .frame(height: 250)
+            }
+        }
     }
 }
 

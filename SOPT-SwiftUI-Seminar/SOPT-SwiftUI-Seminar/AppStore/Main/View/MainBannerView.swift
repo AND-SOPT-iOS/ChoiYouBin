@@ -22,3 +22,7 @@ struct MainBannerView: View {
         .scrollTargetBehavior(.paging)
     }
 }
+
+#Preview {
+    MainBannerView()
+}

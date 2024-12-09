@@ -14,14 +14,28 @@ struct FinanceChartView: View {
         NavigationView {
             VStack {
                 List(0..<chartViewModel.sampleApps.count, id: \.self) { index in
-                    NavigationLink(destination: TossView()) {
+                    ZStack {
                         ChartCell(chartViewModel: chartViewModel, index: index)
+                                
+                        NavigationLink(destination: TossView()) {
+                            EmptyView()
+                        }
+                        .opacity(0)
                     }
                 }
             }
             .listStyle(.plain)
-            .navigationTitle("인기 차트")
-            .background(Color.white)
+            .navigationBarTitleDisplayMode(.inline)
+            .toolbar {
+                ToolbarItem(placement: .principal) {
+                    Text("인기 차트")
+                        .font(.system(size: 16, weight: .bold))
+                }
+            }
         }
     }
+}
+
+#Preview {
+    FinanceChartView()
 }

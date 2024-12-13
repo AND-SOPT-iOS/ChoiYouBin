@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct AppReviewWriteView: View {
+    @EnvironmentObject var viewModel: TossViewModel
+    
     var body: some View {
         VStack (spacing: 10){
             Text("탭하여 평가하기")
@@ -15,9 +17,9 @@ struct AppReviewWriteView: View {
                 .foregroundColor(.black)
             
             Button {
-                
+                viewModel.reviewButtonTapped()
             } label: {
-                Text("☆  ☆  ☆  ☆  ☆")
+                Text(viewModel.isReviewd ? "★ ★ ★ ★ ★" : "☆ ☆ ☆ ☆ ☆")
                     .font(.system(size: 20, weight: .bold))
                     .foregroundColor(.blue)
             }

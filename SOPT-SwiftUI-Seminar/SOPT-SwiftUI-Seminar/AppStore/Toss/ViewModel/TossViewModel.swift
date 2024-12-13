@@ -10,5 +10,9 @@ import SwiftUI
 class TossViewModel: ObservableObject {
     
     @Published var appDetail: AppDetail = AppDetail.tossAppDetail
+    @Published var isReviewd = false
     
+    func reviewButtonTapped() {
+        isReviewd.toggle()
+    }
 }
